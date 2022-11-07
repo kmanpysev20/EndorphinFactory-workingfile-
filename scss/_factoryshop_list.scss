@@ -1,0 +1,102 @@
+.fs-gnb-menu {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom:rem(100);
+    border-bottom:rem(1) solid #8D95A0;
+    > li:nth-of-type(1) {
+        cursor: pointer;
+        display:inline-block;
+        font-size: rem(24);
+        font-weight: 600;
+        line-height: rem(50);
+        > p {
+            position: relative;
+            font-size: rem(24);
+            font-weight: 600;
+            color:#000;
+            &::after {
+                content:'';
+                position: absolute;
+                display: block;
+                width: 100%;
+                height: rem(3);
+                background: #1A1F27;
+            }          
+        }
+    }
+    > li:nth-of-type(2) {
+        cursor: pointer;
+        display:inline-block;
+        font-size: rem(24);
+        font-weight: 600;
+        line-height: rem(50);
+        > p {
+            position: relative;
+            font-size: rem(24);
+            font-weight: 600;
+            color: #8D95A0;
+            &::after {
+                content:'';
+                position: absolute;
+                display: block;
+                width: 100%;
+                height: rem(3);
+                background: #1A1F27;
+            }
+                   
+        }
+    }
+    // > li:nth-of-type(3) {
+    //     cursor: pointer;
+    //     font-size: rem(24);
+    //     font-weight: 600;
+    //     color: #8D95A0;
+    // }
+    // > li:nth-of-type(4) {
+    //     cursor: pointer;
+    //     font-size: rem(24);
+    //     font-weight: 600;
+    //     color: #8D95A0;
+    // }
+    // > li:nth-of-type(5) {
+    //     cursor: pointer;
+    //     font-size: rem(24);
+    //     font-weight: 600;
+    //     color: #8D95A0;
+    // }
+}
+
+
+.fs-bp-main {
+    &:nth-of-type(1) {
+        margin-bottom: rem(160);
+    }
+    &:nth-of-type(2) {
+        margin-bottom: rem(160);
+    }
+}
+
+.fslist-btn-wrap {
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    left:50%;
+    transform: translateX(-50%);
+    margin-bottom:rem(150);
+    .fslist-btn {
+        display:flex;
+        justify-content: center;
+        width:rem(201);
+        height: rem(66);
+        box-shadow: 0 rem(20) rem(40) #0000001A;
+        border: rem(4) solid #000000;
+        border-radius: rem(32);
+        .fslist-img {
+            font-size: rem(20);
+            font-weight: 600;
+        }
+    }
+}
+

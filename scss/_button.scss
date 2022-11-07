@@ -1,0 +1,75 @@
+@charset "utf-8";
+/* ================================== Button ================================== */
+
+// btn
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+	border: none;
+	white-space: nowrap;
+	transition: .4s;
+	cursor: pointer;
+	&-md {
+		height: rem(41);
+		padding: 0 rem(18);
+		font-size: rem(17);
+		font-weight: 600;
+		border: rem(2) solid #000;
+		border-radius: rem(22);
+		background-color: #fff;
+		&.bd-none {
+			border-color: transparent;
+			background-color: transparent;
+		}
+	}
+	&-lg {
+		height: rem(47);
+		padding: 0 rem(18);
+		font-size: rem(16);
+		font-weight: 600;
+		border: rem(2) solid #000;
+		border-radius: rem(22);
+		background-color: #fff;
+		&.bg-primary {
+			color: #fff;
+			background-color: #b153ff;
+		}
+	}
+	&-xlg {
+		height: rem(66);
+		padding: 0 rem(26);
+		font-size: rem(20);
+		font-weight: 600;
+		border: rem(4) solid #000;
+		border-radius: rem(32);
+		background-color: #fff;
+		&.bg-primary {
+			color: #fff;
+			background-color: #b153ff;
+		}
+		.ic {
+			margin-right: rem(8);
+		}
+	}
+	&-mypage {
+        margin-right: rem(26);
+		.ic {
+			margin-right: rem(4);
+		}
+	}
+	&-lang {
+		padding: 0 rem(22);
+	}
+	&-gnb-close {
+		position: absolute;
+		top: rem(-74);
+		right: 0;
+		transition: all .4 ease-out;
+	}
+}
+@media (max-width: 1400px) {
+	.btn-gnb-close {
+		right: rem(40);
+	}
+}

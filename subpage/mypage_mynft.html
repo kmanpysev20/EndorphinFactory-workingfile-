@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endorphin Factory</title>
+    <link rel="stylesheet" href="/css/swiper.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/jquery-ui.min.css">
+
+    <script src="/js/jquery-3.6.1.min.js"></script>
+    <script src="/js/jquery-ui.min.js"></script>
+    <script src="/js/swiper.min.js"></script>
+    <script src="/js/layout.js"></script>
+    <script src="/js/common.js"></script>
+    <script src="/js/popup.js"></script>
+<body>
+
+ 
+<!-- wrap[s] -->
+<div id="wrap">
+
+    <!-- header[s] -->
+    <header id="header" class="main-header">
+        <div class="inner">
+            <h1 class="logo"><a href="javascript:vold(0);"><span class="sr-only">ENDORPHIN FACTORY</span></a></h1>
+            <a href="#" class="btn btn-md btn-mypage"><i class="ic ic-gem gem-xs"></i>MY PAGE</a>
+            <div class="lang-choice">
+                <p class="sr-only">언어 선택</p>
+                <button type="button" class="btn btn-md bd-none">KR</button>
+            </div>
+            <div class="link-choice">
+                <button type="button" class="btn"><i class="ic ic-sns-link"></i><span class="sr-only">SNS 선택</span></button>
+                <ul class="link-list">
+                    <li><a href="javascript:vold(0);"><i class="ic ic-discard"></i>Discord</a></li>
+                    <li><a href="javascript:vold(0);"><i class="ic ic-discard"></i>twitter</a></li>
+                    <li><a href="javascript:vold(0);"><i class="ic ic-discard"></i>Instagram</a></li>
+                    <li><a href="javascript:vold(0);"><i class="ic ic-discard"></i>YouTube</a></li>
+                    <li><a href="javascript:vold(0);"><i class="ic ic-discard"></i>Facebook</a></li>
+                </ul>
+            </div>
+            <button type="button" class="btn btn-gnb-open"><i class="ic ic-gnb-open"></i><span class="sr-only">메뉴 열기</span></button>
+            <!-- gnb(s) -->
+            <nav id="gnb">
+              <ul>
+                <li><a href="javascript:vold(0);">ENDORPHIN FACTORY</a></li>
+                <li><a href="javascript:vold(0);">MINTING GUIDE</a></li>
+                <li><a href="javascript:vold(0);">FACTORY SHOP</a></li>
+                <li><a href="javascript:vold(0);">GALLERY</a></li>
+                <li><a href="javascript:vold(0);">ROADMAP</a></li>
+                <li><a href="javascript:vold(0);">NEWS</a></li>
+                <li><a href="javascript:vold(0);">MY NFT</a></li>
+              </ul>
+              <button type="button" class="btn btn-gnb-close"><i class="ic ic-gnb-close"></i><span class="sr-only">메뉴 닫기</span></button>
+            </nav>
+            <!-- //top-nav(e) -->
+        </div>
+    </header>
+    <!-- //header[e] -->
+
+    <!-- main[s] -->
+    <main id="container" class="bg-white"> <!-- //배경색 적용 클래스: .bg-white, .bg-light, .bg-sky -->
+        
+        <!-- contents[s] -->
+        <section class="contents cont-bg-type1"> <!-- //배경 기본: white, .cont-head: light -->
+            <div class="cont-head">
+                <div class="inner">
+                    <div class="title-wrap">
+                        <h2 class="tit">MY NFT</h2>
+                        <button type="button" class="btn btn-lg bg-primary">0XC93…0C73E <img class="ic mypageclose-btn" src="../img/ic_popup_Close.png" alt=""></button>
+                    </div>
+                    <div class="mynft-enbg-wrap">
+                        <i class="mynft-enbg"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="cont-body">
+                <div class="inner" id="mynft-inner">
+                    <div class="margin-top"></div>
+                    <div class="mynft-top">
+                        <div class="mynft-own-contnet">
+                            <div class="mynft-own-tit">
+                                <p>보유내역</p>
+                                <a href="javascript:vold(0);">GO Gallery&nbsp; &nbsp; ></a>
+                            </div>
+                            <div class="mynft-own-txtwrap">
+                                <div class="own-txt1">
+                                    <p>전체 NFT보유 수량</p>
+                                    <p>01</p>
+                                </div>
+                                <div class="own-txt2">
+                                    <p>유니크 엔도르퍼 보유 수량</p>
+                                    <p>56</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mynft-odl-content">
+                            <div class="mynft-odl-tit">
+                                <p>주문/배송 조회</p>
+                                <span>(주문 배송 현황/최근 3개월)</span>
+                            </div>
+                            <div class="mynft-odl-titwrap">
+                                <div class="odl-txt1">
+                                    <p>주문완료</p>
+                                    <p>0</p>
+                                </div>
+                                <div class="odl-txt2">
+                                    <p>배송준비</p>
+                                    <p>1</p>
+                                </div>
+                                <div class="odl-txt3">
+                                    <p>배송중</p>
+                                    <p>0</p>
+                                </div>
+                                <div class="odl-txt4">
+                                    <p>배송완료</p>
+                                    <p>3</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mynft-center">
+                        <div class="mynft-oder-main">
+                            <h4>주문내역</h4>
+                            <button>1개월</button>
+                            <button>2개월</button>
+                            <button>3개월</button>
+                            <button class="datepicker-wrap">
+                                <input type="text" id="sdate">
+                            </button>
+                            <button class="datepicker-wrap">
+                                <input type="text" id="edate">
+                            </button>
+                            <button>
+                                <a href="javascript:vold(0)">조회</a>
+                            </button>
+                        </div>
+                        <div class="mynft-order-wrap">
+                            <div class="order-tit">
+                                <h4>9월 23일</h4>
+                            </div>
+                            <ul class="mynft-order-content">
+                                <li class="order-item1">
+                                    <img src="../img/mynft-enimg.png" class="mynft-enimg" alt="">
+                                    <div class="order-txt-wrap">
+                                        <div class="order-txt1">
+                                            <p>주문날짜: 2022.09.23</p>
+                                            <p>주문번호: 384587</p>
+                                            <a href="javascript:vold(0);">상세보기&nbsp;&nbsp;></a>
+                                        </div>
+                                        <div class="order-txt2">
+                                            <p>[액자] 캔버스 액자 12호 외 1건</p>
+                                            <span>주문 처리 상태</span>
+                                            <p>배송완료</p>
+                                        </div>
+                                        <div class="order-txt3">
+                                            <span>구매 금액</span>
+                                            <p>100,000 RRT</p>
+                                            <span>배송회사</span>
+                                            <p>딜리언메타</p>
+                                            <span>운송장 번호</span>
+                                            <p>0123456789</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="order-item2">
+                                    <img src="../img/mynft-enimg.png" class="mynft-enimg" alt="">
+                                    <div class="order-txt-wrap">
+                                        <div class="order-txt1">
+                                            <p>주문날짜: 2022.09.23</p>
+                                            <p>주문번호: 384587</p>
+                                            <a href="javascript:vold(0);">상세보기&nbsp;&nbsp;></a>
+                                        </div>
+                                        <div class="order-txt2">
+                                            <p>[액자] 캔버스 액자 12호 외 1건</p>
+                                            <span>주문 처리 상태</span>
+                                            <p>배송완료</p>
+                                        </div>
+                                        <div class="order-txt3">
+                                            <span>구매 금액</span>
+                                            <p>100,000 RRT</p>
+                                            <span>배송회사</span>
+                                            <p>딜리언메타</p>
+                                            <span>운송장 번호</span>
+                                            <p>0123456789</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="order-tit">
+                                <h4>9월 22일</h4>
+                            </div>
+                            <ul class="mynft-order-content">
+                                <li class="order-item3">
+                                    <img src="../img/mynft-enimg.png" class="mynft-enimg" alt="">
+                                    <div class="order-txt-wrap">
+                                        <div class="order-txt1">
+                                            <p>주문날짜: 2022.09.23</p>
+                                            <p>주문번호: 384587</p>
+                                            <a href="javascript:vold(0);">상세보기&nbsp;&nbsp;></a>
+                                        </div>
+                                        <div class="order-txt2">
+                                            <p>[액자] 캔버스 액자 12호 외 1건</p>
+                                            <span>주문 처리 상태</span>
+                                            <p>배송완료</p>
+                                        </div>
+                                        <div class="order-txt3">
+                                            <span>구매 금액</span>
+                                            <p>100,000 RRT</p>
+                                            <span>배송회사</span>
+                                            <p>딜리언메타</p>
+                                            <span>운송장 번호</span>
+                                            <p>0123456789</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <div class="order-main-wrap">
+            <i class="obj-mynft-bg"></i>
+        </div>
+
+
+        <!-- //contents[e] -->
+        
+    </main>
+    <!-- //main[e] -->
+
+    <!-- footer[s] -->
+    <footer id="footer">
+        <div class="inner">
+            <p class="logo"><a href="#"><span class="sr-only">DILLION META</span></a></p>
+            <p class="copyright">COPYRIGHT © DILLION META. ALL RIGHTS RESERVED.</p>
+            <a href="#" class="txt-link">이용약관</a>
+        </div>
+    </footer>
+    <!-- //footer[e] -->
+
+</div>
+<!-- wrap[e] -->
+
+<!-- script[s] -->
+<script type="text/javascript">
+
+</script>
+<!-- script[e] -->
+
+</body>
+</html>

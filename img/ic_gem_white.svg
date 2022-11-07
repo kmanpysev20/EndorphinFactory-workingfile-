@@ -1,0 +1,10 @@
+<svg id="img_Gem" xmlns="http://www.w3.org/2000/svg" width="40" height="50" viewBox="0 0 40 50">
+  <rect id="area" width="40" height="50" fill="none"/>
+  <g id="_01" data-name="01" transform="translate(1.418 0.421)">
+    <path id="패스_14" data-name="패스 14" d="M14.855,1.01,1.576,18.834l1.572,16.23,16.68,9.673,13.7-13.393L33.166,15.5Z" transform="translate(0.714 0.973)" fill="#ffffff"/>
+    <path id="Path_13" data-name="Path 13" d="M14.744-.823l21.15,15.241V33.8L20.162,47.6,1.02,36.826-.4,17.055Zm17.62,17.082L15.325,3.98,3.228,18.263,4.4,34.643l15.315,8.619,12.646-11.1Z" transform="translate(0.397 0.823)" fill="#020001"/>
+    <path id="Path_15" data-name="Path 15" d="M4.439,20.729,4.028,8.48,6.379,8.4l.411,12.249Z" transform="translate(4.031 11.177)"/>
+    <path id="Path_16" data-name="Path 16" d="M10.355,22.851,8.689,21.17l8.649-8.775L19,14.076Z" transform="translate(10.338 16.696)"/>
+    <path id="Path_17" data-name="Path 17" d="M18.816,14.293,7.491,6.351l1.34-1.957,11.326,7.943Z" transform="translate(8.716 5.646)"/>
+  </g>
+</svg>

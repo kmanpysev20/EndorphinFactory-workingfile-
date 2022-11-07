@@ -1,0 +1,155 @@
+.shadow {
+    box-shadow: 0 5px 10px #00000014;
+}
+#sectionRoadmap {
+    .contents {
+        margin-bottom: rem(50);
+        .tit {
+            font-size: rem(56);
+            font-weight: bold;
+            color: #1A1F27;
+            margin-bottom: rem(31);
+        }
+        .dt {
+            font-size: rem(18);
+            font-weight: 500;
+            margin-bottom:rem(40);
+        }
+        .roadmap-wrap {
+            display: flex;
+            justify-content: center;
+            [class*='roadmap-list'] {
+                position: relative;
+                width: rem(648);
+                height: rem(613);
+                background: #fff;
+                border: rem(4) solid #000000;
+                border-radius: rem(30);
+                padding: rem(60);
+                margin: rem(24);
+                z-index: 3;
+                .dd {
+                    font-size: rem(18);
+                    font-weight: bold;
+                    text-align: left;
+                    margin-bottom: rem(10);
+                }
+                .tit {
+                    font-size: rem(40);
+                    font-weight: bold;
+                    text-align: left;
+                    margin-bottom: rem(31);
+                }
+                .txt-wrap {
+                    display:flex;
+                    align-items: center;
+                    width: rem(448);
+                    margin-bottom:rem(20);
+                    .ic-check {
+                        display: inline-block;
+                        width: rem(40);
+                        height: rem(40);
+                        object-fit: cover;
+                        margin-right:rem(20);
+                    }
+                    .ic-blank {
+                        display: inline-block;
+                        width: rem(40);
+                        height: rem(40);
+                        object-fit: cover;
+                        margin-right:rem(20);
+                    }
+                    .txt {
+                        display:inline-block;
+                        font-size: rem(24);
+                        font-weight: bold;
+                        text-align: left;
+                    }
+                }
+                .thumb {
+                    position: absolute;
+                    width: 100%;
+                    height:rem(400);
+                    top: 22%;
+                    left:0;
+                    overflow: hidden;
+                    .obj-roadmap-complete {
+                        display: inline-block;
+                        object-fit: cover;
+                        width: rem(467);
+                        height: rem(400);
+                        z-index: 4;
+                    }
+                }
+            }
+            .roadmap-list-1 {
+                background-color: #FFFD5D;
+            }
+            .roadmap-list-2 {
+                background-color: #FFFD5D;
+            }
+        }
+    }
+    .bg-group-gem {
+        background-color: #F4F4F4;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50vh;
+        overflow: hidden;
+        [class*='obj-gem-'] {
+            width: rem(40);
+            height: rem(50);
+            background-image: url("../img/ic_gem.svg");
+            background-size: cover;
+            left: 50%;
+            display: inline-block;
+            background-repeat: no-repeat;
+            background-position: center;
+            transform: translateX(-50%);
+        }
+        .obj-gem-l1 {
+            position: absolute;
+            top: rem(350);
+            margin-left: rem(-609);
+            width: rem(25);
+            height: rem(33);
+        }
+        .obj-gem-l2 {
+            position: absolute;
+            top: rem(477);
+            margin-left: rem(-755);
+            width: rem(36);
+            height: rem(48);
+        }
+        .obj-gem-l3 {
+            position: absolute;
+            top: rem(308);
+            margin-left: rem(-905);
+            width: rem(31);
+            height: rem(40.5);
+        }
+        .obj-gem-r1 {
+            position: absolute;
+            top: rem(503);
+            margin-left: rem(659);
+            width: rem(30);
+            height: rem(40);
+        }
+        .obj-gem-r2 {
+            position: absolute;
+            top: rem(589);
+            margin-left: rem(788);
+            width: rem(36);
+            height: rem(48);
+        }
+        .obj-gem-r3 {
+            position: absolute;
+            top: rem(554);
+            margin-left: rem(994);
+            width: rem(25);
+            height: rem(34);
+        }
+    }
+}

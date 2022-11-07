@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Endorphin Factory</title>
+
+        <link rel="stylesheet" href="/css/swiper.min.css">
+        <link rel="stylesheet" href="/css/jquery-ui.css">
+        <link rel="stylesheet" href="/css/jquery-ui.min.css">
+        <link rel="stylesheet" href="/css/jquery-ui.structure.css">
+        <link rel="stylesheet" href="/css/jquery-ui.structure.min.css">
+        <link rel="stylesheet" href="/css/jquery-ui.theme.css">
+        <link rel="stylesheet" href="/css/jquery-ui.theme.min.css">
+        <link rel="stylesheet" href="/css/style.css">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"/>
+        <link rel="stylesheet" href="/css/jquery.fullpage.min.css">
+        <link rel="stylesheet" href="/css/gallery_popup_edit.css">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="/js/jquery-3.6.1.min.js"></script>
+        <script src="/js/jquery-ui.js"></script>
+        <script src="/js/jquery-ui.min.js"></script>
+        <script src="/js/swiper.min.js"></script>
+        <script src="/js/jquery.fullpage.min.js"></script>
+        <script src="/js/common.js"></script>
+        <script src="/js/popup.js"></script>
+        <script src="/js/galleryevent.js"></script>
+
+        <body>
+            <!-- header -->
+            <header class="header">
+                <div class="header-inner">
+                    <h1 class="header-logo">
+                        <a href="/">
+                            <img src="../img/Logo_Endorphin.png" alt="mainlogo">
+                        </a>
+                    </h1>
+
+                    <div class="header-menu">
+                        <div class="header-mypage">
+                            <a href="/subpage/mypage.html">
+                                <p class="mypage-tit">
+                                    <img src="../img/img_Gem.png" alt="">
+                                    MY PAGE
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="lang-wrap">
+                            <p class="lang-txt">KR</p>
+                        </div>
+
+                        <div class="header-side-sns">
+                            <a href="#.">
+                                <img src="../img/link btn.png" alt="">
+                            </a>
+
+                            <ul class="header-sns-list">
+                                <li>
+                                    <a href="">
+                                        <img src="" alt="">Discord
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="" alt="">twitter
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="" alt="">Instagram
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="" alt="">YouTube
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="" alt="">Facebook
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div class="menu-btn">
+                            <a href="#">
+                                <img src="../img/ic_menu.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar-menu">
+                    <div class="sidebar-inner">
+                        <div class="sidebar-top">
+                            <h1 class="menu-logo">
+                                <a href="/">
+                                    <img class="header-logo" src="../img/Logo_Endorphin-1.png">
+                                </a>
+                            </h1>
+                            <div class="close-btn">
+                                <a href="#">
+                                    <img src="../img/ic_popup_Close.png">
+                                </a>
+                            </div>
+                        </div>
+                        <ul class="sidebar-main">
+                            <li>
+                                <a href="/index.html">ENDORPHIN FACTORY</a>
+                            </li>
+                            <li>
+                                <a href="#">MINTING GUIDE</a>
+                            </li>
+                            <li>
+                                <a href="/">FACTORY SHOP</a>
+                            </li>
+                            <li>
+                                <a href="/subpage/gallery.html">GALLERY</a>
+                            </li>
+                            <li>
+                                <a href="#">ROADMAP</a>
+                            </li>
+                            <li>
+                                <a href="/subpage/news.html">NEWS</a>
+                            </li>
+                            <li>
+                                <a href="/subpage/mypage.html">MY NFT</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="gallery">
+            <div class="gallery-inner">
+                <h3>Discover your Endorpher</h3>
+                <h1>Endorphin Factory</h1>
+                <div class="gallery-content">
+                    <div class="gallery-leftside">
+                        <div class="input-wrap">
+                            <input type="number" placeholder="Number">
+                            <img src="../img/ic_input_Search.png" alt="">
+                        </div>
+
+                        <div class="filter-wrap">
+                            <div class="filter-list-top">
+                                <div class="top-tit-wrap">
+                                    <h3>Art Type</h3>
+                                    <h4>1</h4>
+                                </div>
+                                <ul class="top-list-wrap">
+                                    <li class="top-list1">
+                                        <label for="check1">Original</label>
+                                        <input type="checkbox" id="check1">
+                                    </li>
+                                    <li class="top-list2">
+                                        <label for="check2">Unique</label>
+                                        <input type="checkbox" id="check2">
+                                    </li>
+                                    <li class="top-list3">
+                                        <label for="check3">Generate</label>
+                                        <input type="checkbox" id="check3">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="filter-list-bottom">
+                                <div class="bottom-tit-wrap">
+                                    <h3>Artist</h3>
+                                    <h4>1</h4>
+                                </div>
+                                <ul class="bottom-list-wrap">
+                                    <li class="bottom-list1">
+                                        <label for="check1">Dopamin.C</label>
+                                        <input type="checkbox" id="check1">
+                                    </li>
+                                    <li class="bottom-list2">
+                                        <label for="check2">HPP</label>
+                                        <input type="checkbox" id="check2">
+                                    </li>
+                                    <li class="bottom-list3">
+                                        <label for="check3">FORI</label>
+                                        <input type="checkbox" id="check3">
+                                    </li>
+                                    <li class="bottom-list4">
+                                        <label for="check4">OZO</label>
+                                        <input type="checkbox" id="check4">
+                                    </li>
+                                    <li class="bottom-list5">
+                                        <label for="check5">Lemar Kim</label>
+                                        <input type="checkbox" id="check5">
+                                    </li>
+                                    <li class="bottom-list6">
+                                        <label for="check6">Dopamin.C</label>
+                                        <input type="checkbox" id="check6">
+                                    </li>
+                                    <li class="bottom-list7">
+                                        <label for="check7">HPP</label>
+                                        <input type="checkbox" id="check7">
+                                    </li>
+                                    <li class="bottom-list8">
+                                        <label for="check8">FORI</label>
+                                        <input type="checkbox" id="check8">
+                                    </li>
+                                    <li class="bottom-list9">
+                                        <label for="check9">OZO</label>
+                                        <input type="checkbox" id="check9">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="gallery-rightside">
+                        <div class="right-top">
+                            <div class="top-content-wrap1">
+                                <img src="../img/Icon - refresh.png" alt="">
+                                <p>Updated</p>
+                                <p>10,001 items</p>
+                                <div class="mynft-btn">
+                                    <input type="checkbox" id="gal-my-nft">
+                                    <label for="gal-my-nft">MY NFT</label>
+                                </div>
+                            </div>
+                            
+                            <div class="top-content-wrap2">
+                                <button class="tit-btn">
+                                    <p class="tit-txt">
+                                    Unique
+                                    </p>
+                                    <img src="../img/ic_input_del.png" alt="">
+                                </button>
+                                <button class="tit-btn">
+                                    <p class="tit-txt">
+                                    Lemar Kim
+                                    </p>
+                                    <img src="../img/ic_input_del.png" alt="">
+                                </button>
+                            </div> 
+                        </div>
+
+                        <div class="right-main">
+                            <ul class="gallery-item-wrap">
+                                <li class="item-list1">
+                                    <img src="../img/image Areag1.png" alt="">
+                                    <h4>Endorphin Factory</h4>
+                                    <h3>#9473</h3>
+                                    <div class="gallery-btn-wrap">
+                                        <div class="gallery-namebtn1">
+                                            <a href="#.">
+                                                <p>이름 변경</p>
+                                            </a>
+                                        </div>
+                                        <div class="gallery-goodsbtn1">
+                                            <a href="#.">
+                                                <p>굿즈제작</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="item-list2">
+                                    <img src="../img/image Areag2.png" alt="">
+                                    <h4>Endorphin Factory</h4>
+                                    <h3>#9473</h3>
+                                    <div class="gallery-btn-wrap">
+                                        <div class="gallery-namebtn2">
+                                            <a href="#.">
+                                                <p>이름 변경</p>
+                                            </a>
+                                        </div>
+                                        <div class="gallery-goodsbtn2">
+                                            <a href="#.">
+                                                <p>굿즈제작</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="item-list3">
+                                    <img src="../img/image Areag3.png" alt="">
+                                    <h4>Endorphin Factory</h4>
+                                    <h3>#9473</h3>
+                                    <div class="gallery-btn-wrap">
+                                        <div class="gallery-namebtn3">
+                                            <a href="#.">
+                                                <p>이름 변경</p>
+                                            </a>
+                                        </div>
+                                        <div class="gallery-goodsbtn3">
+                                            <a href="#.">
+                                                <p>굿즈제작</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="viewmore-btn">
+                            <a href="/subpage/gallery.html">
+                                <div class="viewmore-content">
+                                    <img src="../img/img_Gem.png" alt="">
+                                    <p class="viewmore-tit">
+                                        VIEW MORE
+                                    </p>
+                                </div>
+                            </a>
+                        </div>  
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 팝업 -->
+    <div class="modal-container">
+        <div class="popup-wrap" id="galleryname">
+            <div class="galleryname-popup">
+                <div class="popup-content">
+                    <div class="popup-head">
+                        <p class="popup-txt1">내 NFT 이름 변경하기</p>
+                        <div class="popup-btn-close" id="close">
+                            <img src="../img/ic_input_del.png">
+                        </div>
+                    </div>
+                    <p class="popup-txt2">world view story</p>
+                    <div class="popup-cneter">
+                    </div>
+                    <div class="popup-bottom">
+                        <p class="popup-txt3">ENDORPHIN FACTORY #9473</p>
+                        <p class="popup-txt4">헌신적인 성격을 소유하고 있던 이 엔도르퍼는 엔돌핀 GEM을 통해 각성한 후,<br>
+                            다른 엔도르퍼들과 그들의 엔돌핀 GEM을 수호하는 기사가 되었다.<br>
+                            헌신적인 성격을 소유하고 있던 이 엔도르퍼는 엔돌핀 GME을 통해 각성한 후,<br>
+                            다른 엔도르퍼들과 그들의 엔돌필 GEM을 수호하는 기사가 되었다.</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer>
+        <div class="footer-wrap">
+            <img src="../img/logo_DILLION_META.png" alt="">
+            <div class="footer-bottom">
+                <p class="footer-txt1">Copyright © DILLION META. All rights reserved.</p>
+                <p class="footer-txt2">
+                    <a href="/#"></a>
+                    이용약관</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

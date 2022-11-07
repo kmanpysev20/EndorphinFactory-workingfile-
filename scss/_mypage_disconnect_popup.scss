@@ -1,0 +1,248 @@
+//kaikas popup
+.modal-container {
+    width: 100%;
+    .pop-wrap {
+        background-color: rgba(0,0,0,0.9);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1000;
+        .kaikaspop {
+            width: rem(360);
+            height: rem(532);
+            background: #fff;
+            border: 3px solid #1a1f27;
+            z-index: 0;
+            padding: rem(31) rem(24) rem(48);
+            .pop-top {
+                display: flex;
+                align-items: center;
+                margin-bottom: rem(34);
+                > p {
+                    font-size: rem(20);
+                    font-weight: 600;
+                    color: #222222;
+                    margin-right: rem(148);
+                }
+                .pop-close-btn {
+                    width: rem(24);
+                    height: rem(24);
+                    background-image: url("../img/ic_popup_Close_black.png");
+                    cursor: pointer;
+                }
+            }
+            .pop-center {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                .kaikas-btn {
+                    display: inline-block;
+                    object-fit: cover;
+                    width: rem(42);
+                    height: rem(42);
+                    background-repeat: no-repeat;
+                    background-image: url("../img/logo_Kaikas.png");
+                    margin-bottom: rem(8);
+                }
+                > p:nth-of-type(1) {
+                    font-size: rem(25);
+                    font-weight: 600;
+                    margin-bottom: rem(22);
+                }
+                > p:nth-of-type(2) {
+                    font-size: rem(18);
+                    font-weight: 600;
+                    margin-bottom: rem(30);
+                }
+                .center-tit-wrap {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    width: rem(312);
+                    height: rem(80);
+                    background: #f7f8fc;
+                    > p:nth-of-type(1) {
+                        font-size: rem(20);
+                        font-weight: 600;
+                        margin-bottom: rem(3);
+                    }
+                    > p:nth-of-type(2) {
+                        font-size: rem(14);
+                        font-weight: 600;
+                        color: #222;
+                    }
+                }
+                .pop-input-wrap {
+                    display: flex;
+                    align-items: flex-start;
+                    margin-top: rem(30);
+                    > input {
+                        width: rem(24);
+                        height: rem(24);
+                        margin-top: rem(-4);
+                        margin-right: rem(15);
+                    }
+                    > label {
+                        text-align: left;
+                    }
+                }
+            }
+            .pop-bottom {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                margin-top: rem(33);
+                > a:nth-of-type(1) {
+                    width: rem(110);
+                    height: rem(50);
+                    background: #FFFFFF 0 0 no-repeat padding-box;
+                    box-shadow: 5px 5px 0 #0005151F;
+                    border: 2px solid #000000;
+                    border-radius: rem(25);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: rem(8);
+                    > p {
+                        font-size: rem(18);
+                        font-weight: 500;
+                        color: #222;
+                    }
+                }
+                > a:nth-of-type(2) {
+                    width: rem(194);
+                    height: rem(50);
+                    background: #454545 0 0 no-repeat padding-box;
+                    box-shadow: 5px 5px 0 #0005151F;
+                    border: 2px solid #000000;
+                    border-radius: rem(25);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: rem(8);
+                    > p {
+                        font-size: rem(18);
+                        font-weight: 500;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//klip popup
+.modal-container {
+    width: 100%;
+    .pop-wrap {
+        background-color: rgba(0,0,0,0.9);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1000;
+        .klippop {
+            width: rem(360);
+            height: rem(532);
+            background: #FDE500;
+            border: 3px solid #1a1f27;
+            z-index: 0;
+            padding: rem(31) rem(24) rem(48);
+            .pop-top {
+                display: flex;
+                align-items: center;
+                margin-bottom: rem(34);
+                > p {
+                    font-size: rem(20);
+                    font-weight: 600;
+                    color: #222222;
+                    margin-right: rem(148);
+                }
+                .pop-close-btn {
+                    width: rem(24);
+                    height: rem(24);
+                    background-image: url("../img/ic_popup_Close_yellow.png");
+                    cursor: pointer;
+                }
+            }
+
+            .pop-center {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                .klip-btn {
+                    display: inline-block;
+                    object-fit: cover;
+                    width: rem(52);
+                    height: rem(26);
+                    background-repeat: no-repeat;
+                    background-image: url("../img/logo_Klip.png");
+                    margin-bottom: rem(8);
+                }
+                > p:nth-of-type(1) {
+                    font-size: rem(25);
+                    font-weight: 600;
+                    margin-bottom: rem(13);
+                }
+                > a {
+                    .klip-qr {
+                        display: inline-block;
+                        object-fit: cover;
+                        width: rem(160);
+                        height: rem(160);
+                        background-repeat: no-repeat;
+                        background-image: url("../img/QRcode.png");
+                        margin-bottom: rem(10);
+                    }
+                }
+
+                > p:nth-of-type(2) {
+                    font-size: rem(13);
+                    font-weight: 500;
+                    color: #222;
+                }
+                > p:nth-of-type(3) {
+                    font-size: rem(19);
+                    font-weight: 600;
+                    margin-bottom: rem(20);
+                }
+                > p:nth-of-type(4) {
+                    font-size: rem(14);
+                    font-weight: 500;
+                    color: #222;
+                    margin-bottom: rem(29);
+                }
+            }
+            .pop-bottom {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: rem(312);
+                height: rem(50);
+                background: #fff;
+                box-shadow: rem(5) rem(5) 0 #0005151F;
+                border: rem(2) solid #000000;
+                border-radius: rem(25);
+                > a {
+                    > p {
+                        font-size: rem(18);
+                        font-weight: 500;
+                        color: #222;
+                    }
+                }
+            }
+        }
+    }
+}

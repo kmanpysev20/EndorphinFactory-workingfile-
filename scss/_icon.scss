@@ -1,0 +1,128 @@
+@charset "utf-8";
+/* ================================== Icon ================================== */
+.ic {
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	&-gem {
+		width: rem(40);
+		height: rem(50);
+		background-image: url("../img/ic_gem.svg");
+		&.gem-xs {
+			width: rem(17);
+			height: rem(22);
+		}
+		&.gem-sm {
+			width: rem(21);
+			height: rem(26);
+		}
+		&.gem-md {
+			width: rem(27);
+			height: rem(34);
+		}
+		&.gem-lg {
+			width: rem(34);
+			height: rem(44);
+		}
+	}
+	&-gem-white {
+		width: rem(40);
+		height: rem(50);
+		background-image: url("../img/ic_gem_white.svg");
+		&.gem-xs {
+			width: rem(17);
+			height: rem(22);
+		}
+		&.gem-sm {
+			width: rem(21);
+			height: rem(26);
+		}
+		&.gem-md {
+			width: rem(27);
+			height: rem(34);
+		}
+		&.gem-lg {
+			width: rem(34);
+			height: rem(44);
+		}
+	}
+	&-discard {
+		width: rem(30);
+		height: rem(30);
+		margin-right:rem(5);
+		&.discord {
+			background-image: url("../img/discord.png");
+		}
+		&.twitter {
+			background-image: url("../img/twitter.png");
+		}
+		&.Instagram {
+			background-image: url("../img/instagram.png");
+		}
+		&.YouTube {
+			background-image: url("../img/youtube.png");
+		}
+		&.Facebook {
+			background-image: url("../img/facebook.png");
+		}
+	}
+
+	&-sns-link {
+		width: rem(40);
+		height: rem(40);
+		background-image: url("../img/link btn.png");
+
+		
+	}
+	&-gnb-open {
+		width: rem(32);
+		height: rem(32);
+		background-image: url("../img/ic_menu.png");
+	}
+	&-gnb-close {
+		width: rem(48);
+		height: rem(48);
+		background-image: url("../img/ic_popup_Close.png");
+	}
+	&-scroll {
+		width: rem(44);
+		height: rem(60);
+		background-image: url("../img/ic_Chevron.png");
+	}
+	&-video-prev {
+		width: rem(50);
+		height: rem(50);
+		background-image: url("../img/ic-video-left.png");
+	}
+	&-video-next {
+		width: rem(50);
+		height: rem(50);
+		background-image: url("../img/ic-video-right.png");
+	}
+	&.nav-prev-white {
+		width: rem(50);
+		height: rem(50);
+		background-image: url("../img/ic-nav-prev-white.png");
+	}
+	&.nav-next-white {
+		width: rem(50);
+		height: rem(50);
+		background-image: url("../img/ic-nav-next-white.png");
+	}
+	&-website {
+		width: rem(28);
+		height: rem(28);
+		background-image: url("../img/ic-website.png");
+	}
+	&-twitter {
+		width: rem(28);
+		height: rem(28);
+		background-image: url("../img/ic-twitter.png");
+	}
+	&-instagram {
+		width: rem(28);
+		height: rem(28);
+		background-image: url("../img/ic-instagram.png");
+	}
+}

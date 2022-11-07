@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endorphin Factory</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/swiper.min.css">
+    <link rel="stylesheet" href="/css/jquery-ui.min.css">
+
+    <script src="/js/jquery-3.6.1.min.js"></script>
+    <script src="/js/jquery-ui.min.js"></script>
+    <script src="/js/swiper.min.js"></script>
+    <script src="/js/layout.js"></script>
+    <script src="/js/common.js"></script>
+    <script src="/js/popup.js"></script>
+</head>
+<body>
+ 
+<!-- wrap[s] -->
+<div id="wrap">
+
+    <!-- header[s] -->
+    <header id="header" class="main-header">
+        <div class="inner">
+            <h1 class="logo"><a href="javascript:vold(0);"><span class="sr-only">ENDORPHIN FACTORY</span></a></h1>
+            <a href="#" class="btn btn-md btn-mypage"><i class="ic ic-gem gem-xs"></i>MY PAGE</a>
+            <div class="lang-choice">
+                <p class="sr-only">언어 선택</p>
+                <button type="button" class="btn btn-md bd-none">KR</button>
+            </div>
+            <div class="link-choice">
+                <button type="button" class="btn"><i class="ic ic-sns-link"></i><span class="sr-only">SNS 선택</span></button>
+                <ul class="link-list">
+                    <li><a href="javascript:vold(0);"><i class="ic ic-discard"></i>Discord</a></li>
+                    <li><a href="javascript:vold(0);"><i class="ic ic-discard"></i>twitter</a></li>
+                    <li><a href="javascript:vold(0);"><i class="ic ic-discard"></i>Instagram</a></li>
+                    <li><a href="javascript:vold(0);"><i class="ic ic-discard"></i>YouTube</a></li>
+                    <li><a href="javascript:vold(0);"><i class="ic ic-discard"></i>Facebook</a></li>
+                </ul>
+            </div>
+            <button type="button" class="btn btn-gnb-open"><i class="ic ic-gnb-open"></i><span class="sr-only">메뉴 열기</span></button>
+            <!-- gnb(s) -->
+            <nav id="gnb">
+              <ul>
+                <li><a href="javascript:vold(0);">ENDORPHIN FACTORY</a></li>
+                <li><a href="javascript:vold(0);">MINTING GUIDE</a></li>
+                <li><a href="javascript:vold(0);">FACTORY SHOP</a></li>
+                <li><a href="javascript:vold(0);">GALLERY</a></li>
+                <li><a href="javascript:vold(0);">ROADMAP</a></li>
+                <li><a href="javascript:vold(0);">NEWS</a></li>
+                <li><a href="javascript:vold(0);">MY NFT</a></li>
+              </ul>
+              <button type="button" class="btn btn-gnb-close"><i class="ic ic-gnb-close"></i><span class="sr-only">메뉴 닫기</span></button>
+            </nav>
+            <!-- //top-nav(e) -->
+        </div>
+    </header>
+    <!-- //header[e] -->
+
+    <!-- main[s] -->
+    <main id="container" class="bg-light"> <!-- //배경색 적용 클래스: .bg-white, .bg-light, .bg-sky -->
+
+        <section>
+            <div class="inner mypage-disconnect-inner">
+                <div class="mypage-disconnect-wrap">
+                    <h2>MY NFT</h2>
+                    <p>보유 NFT를 조회하시려면 지갑을 연결해 주세요.</p>
+                        <div class="mypage-disconnect-btnwrap">
+                            <a class="kaikas-btn" href="#">
+                                <i class="logo-kaikas"></i>
+                                <p>Kaikas<br>by Klaytn</p>
+                            </a>
+                            <a class="klip-btn" href="javascript:void(0)">
+                                <i class="logo-klip"></i>
+                                <p>Connect Klip<br>via Kakao</p>
+                            </a>
+                        </div>
+                </div>
+            </div>
+
+            <div class="mypage-disconnect-img-wrap">
+                <i class="obj-mypagedis-bg"></i>
+            </div>
+
+        </section>
+
+    </main>
+    <!-- //main[e] -->
+
+    <!-- footer[s] -->
+    <footer id="footer">
+        <div class="inner">
+            <p class="logo"><a href="#"><span class="sr-only">DILLION META</span></a></p>
+            <p class="copyright">COPYRIGHT © DILLION META. ALL RIGHTS RESERVED.</p>
+            <a href="#" class="txt-link">이용약관</a>
+        </div>
+    </footer>
+    <!-- //footer[e] -->
+
+    <!-- popup[s] -->
+     <!-- kaikas popup -->
+    <div class="modal-container">
+        <div class="pop-wrap" id="kaikaspop">
+            <div class="kaikaspop">
+                <div class="pop-content">
+                    <div class="pop-top">
+                        <p>서비스 연결 요청</p>
+                        <i class="ic pop-close-btn" id="pop-close-btn"></i>
+                    </div>
+                    <div class="pop-center">
+                        <i class="kaikas-btn"></i>
+                        <p>Kaikas by Klaytn</p>
+                        <p>아래 서비스에서 고객님의<br>
+                            계정 정보를 요청하고 있습니다.<br>
+                            신뢰할만한 서비스만 연결해주세요.</p>
+                        <div class="center-tit-wrap">
+                            <p>Endorphin Factory</p>
+                            <p>Roundrobin.finamce</p>
+                        </div>
+                        <div class="pop-input-wrap">
+                            <input type="checkbox" id="kaikas-cehck">
+                            <label for="kaikas-check">위 서비스를 신뢰하며, 서비스 이용에 관한 책임은 모두 본인에게 있습니다.</label>
+                        </div>
+                    </div>
+                    <div class="pop-bottom">
+                        <a class="pop-negative-btn" href="javascript:vold(0)">
+                            <p>거부</p>
+                        </a>
+                        <a class="pop-connenct-btn" href="javascript:vold(0)">
+                            <p>연결</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- klip popup -->
+     <div class="modal-container">
+        <div class="pop-wrap" id="klippop">
+            <div class="klippop">
+                <div class="pop-content">
+                    <div class="pop-top">
+                        <p>서비스 연결 요청</p>
+                        <i class="ic pop-close-btn" id="pop-close-btn"></i>
+                    </div>
+                    <div class="pop-center">
+                        <i class="klip-btn"></i>
+                        <p>Connect Klip via Kakao</p>
+                        <a href="javascript:vold(0)">
+                            <i class="klip-qr"></i>
+                        </a>
+                        <p>남은 시간</p>
+                        <p>04:56</p>
+                        <p>QR 코드 리더나 카카오톡 앱으로<br>
+                        QR코드 스캔해주세요.</p>
+                    </div>
+                    <div class="pop-bottom">
+                        <a class="pop-walletchange-btn" href="javascript:vold(0)">
+                            <p>지갑변경</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <!-- popup[e] -->
+
+</div>
+<!-- wrap[e] -->
+
+    <!-- script[s] -->
+    <script type="text/javascript">
+
+	</script>
+    <!-- script[e] -->
+
+</body>
+</html>
