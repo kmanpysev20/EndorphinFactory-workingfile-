@@ -960,7 +960,7 @@
   margin-top: 1.25rem;
 }
 .slide-pfp .pfp-list .thumb .tit {
-  font-size: 1.125rem !important;
+  font-size: 1.125rem;
   font-weight: 500;
   color: #1A1F27;
   margin-top: 2.75rem;
@@ -1010,7 +1010,7 @@
   padding-top: 3.125rem;
 }
 .slide-unique .unique-wrap {
-  width: 100% !important;
+  width: 100%;
   flex-direction: unset;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -1020,7 +1020,7 @@
   width: 100%;
   max-width: 12.5rem;
   height: 12.5rem;
-  margin-top: unset !important;
+  margin-top: unset;
   margin: 0.625rem;
 }
 .slide-unique .unique-wrap .unique-list .thumb {
@@ -2058,7 +2058,7 @@
   }
   #header #gnb li {
     text-align: left;
-    margin-bottom: 1.875rem !important;
+    margin-bottom: 1.875rem;
   }
   #header #gnb li .txt {
     font-size: 1.25rem;
@@ -2085,10 +2085,10 @@
     display: block;
   }
   #header .gnb-ef-list li {
-    margin: 1.25rem 0 !important;
+    margin: 1.25rem 0;
   }
   #header .gnb-ef-list li a {
-    font-size: 0.9375rem !important;
+    font-size: 0.9375rem;
     font-weight: 500;
     opacity: 0.6;
   }

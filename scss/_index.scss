@@ -1003,7 +1003,7 @@
             }
     
             .tit {
-                font-size: rem(18) !important;
+                font-size: rem(18);
                 font-weight: 500;
                 color: #1A1F27;
                 margin-top: rem(44);
@@ -1056,7 +1056,7 @@
     margin-right: auto;
     padding-top : rem(50);
     .unique-wrap {
-        width: 100% !important;
+        width: 100%;
         flex-direction: unset;
         flex-wrap: wrap;
         justify-content: flex-start;
@@ -1065,7 +1065,7 @@
             width: 100%;
             max-width: rem(200);
             height:rem(200);
-            margin-top: unset !important;
+            margin-top: unset;
             margin : rem(10);
             .thumb {
                 position: relative;

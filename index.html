@@ -110,7 +110,7 @@
         <section class="main-section" id="sectionIntro">
             <div class="inner">
                 <div class="contents" data-top-top="opacity: 1;" data-center-bottom="opacity: 0;" data-anchor-target="#sectionIntro">
-                    <h2 class="tit"><img src="../img/EF_logo.png" alt="ENDORPHIN FACTORY 로고"></h2>
+                    <h2 class="tit"><img src="./img/EF_logo.png" alt="ENDORPHIN FACTORY 로고"></h2>
                     <p class="txt"><strong>
                         23인의 아티스트가 불어 넣은 영감으로 탄생된 엔돌핀&nbsp;<i class="ic ic-gem gem-md"></i>GEM<br>
                         특별한 능력이 부여된 엔돌핀 GEM을 얻으면 누구나 유니크 엔도르퍼가 될 수 있다!<br>
@@ -827,6 +827,76 @@
     });
 
     // scroll event
+    function changeScroll() {
+                const mainHeader = document.querySelector('.main-header'),
+                mainFooter = document.querySelector('.main-footer'),
+                sectionFaq = document.querySelector('#sectionFaq');
+
+                let docScrollTop = Math.round(window.scrollY);
+                let innerGap = 100;
+        
+                document.querySelectorAll('.main-section').forEach(sectionBlock => {
+                    let elTop = sectionBlock.offsetTop;
+                    let elBtm = elTop + sectionBlock.offsetHeight;
+                    if (elTop <= docScrollTop && elBtm >= docScrollTop) {
+                        sectionBlock.classList.add('is-active');
+                        if (elTop >= docScrollTop) {
+                            console.log(sectionBlock.classList + 'top');
+                        }
+                        if (elBtm - window.innerHeight < docScrollTop) {
+                            console.log(sectionBlock.classList + 'bottom');
+                            sectionBlock.classList.add('is-bottom');
+                        } else {
+                            sectionBlock.classList.remove('is-bottom');
+                        }
+                    } else {
+                        sectionBlock.classList.remove('is-active');
+                        sectionBlock.classList.remove('is-bottom');
+                    }
+                });
+
+                // header Control
+                if (mainHeader !== null) {
+                    if (docScrollTop > 0) {
+                        mainHeader.classList.add('is-shadow');
+                    } else {
+                        mainHeader.classList.remove('is-shadow');
+                    }
+                }
+            }
+
+
+    function test() {
+            if (matchMedia("screen and (min-width: 1024px)").matches) {
+                console.log('pc');
+                changeScroll();
+            } else {
+                console.log('mobile');
+                
+            // 1024px 미만에서 사용할 JavaScript
+            }
+        }
+        
+        window.addEventListener('load', function(event) {
+            test();
+        }, true);
+
+        window.addEventListener('resize', function(event) {
+            test();
+        }, true);
+
+    
+        // onload
+        window.onload = function() {
+            test();
+        };
+        // onscroll
+        window.onscroll = function() {
+            test(); 
+        };
+
+
+
     function changeScroll() {
         const mainHeader = document.querySelector('.main-header'),
             mainFooter = document.querySelector('.main-footer'),

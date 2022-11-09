@@ -617,7 +617,7 @@
     }
     #header #gnb li{
         text-align: left;
-        margin-bottom: rem(30) !important;
+        margin-bottom: rem(30);
     }
 
     #header #gnb li .txt{
@@ -647,11 +647,11 @@
     }
 
     #header .gnb-ef-list li {
-        margin: rem(20) 0 !important;
+        margin: rem(20) 0;
     }
 
     #header .gnb-ef-list li a {
-        font-size: rem(15) !important;
+        font-size: rem(15);
         font-weight: 500;
         opacity: 0.6;
     }
