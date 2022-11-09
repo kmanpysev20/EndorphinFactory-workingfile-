@@ -683,5 +683,14 @@
         font-weight: 600;
         height: 100%;
     }
-    
+    //footer
+    #footer {
+        padding: rem(0);
+        .obj-rail {
+            position: relative;
+            height: 100%;
+            background-size: 100% 100%;
+        }
+    }
+
 }

@@ -576,13 +576,14 @@
 
     <!-- footer[s] -->
     <footer id="footer" class="main-footer">
+        <i class="obj-rail"></i>
         <div class="inner">
             <p class="logo"><a href="#"><span class="sr-only">DILLION META</span></a></p>
             <p class="copyright">COPYRIGHT © DILLION META. ALL RIGHTS RESERVED.</p>
             <a href="/subpage/service.html" class="txt-link">이용약관</a>
         </div>
         <!-- 20221101 수정사항6 [s] -->
-        <i class="obj-rail"></i>
+        <!-- <i class="obj-rail"></i> -->
         <!-- 20221101 수정사항6 [e] -->
     </footer>
     <!-- //footer[e] -->
@@ -788,42 +789,42 @@
 
     // scroll event
     function changeScroll() {
-                const mainHeader = document.querySelector('.main-header'),
-                mainFooter = document.querySelector('.main-footer'),
-                sectionFaq = document.querySelector('#sectionFaq');
+        const mainHeader = document.querySelector('.main-header'),
+        mainFooter = document.querySelector('.main-footer'),
+        sectionFaq = document.querySelector('#sectionFaq');
 
-                let docScrollTop = Math.round(window.scrollY);
-                let innerGap = 100;
-        
-                document.querySelectorAll('.main-section').forEach(sectionBlock => {
-                    let elTop = sectionBlock.offsetTop;
-                    let elBtm = elTop + sectionBlock.offsetHeight;
-                    if (elTop <= docScrollTop && elBtm >= docScrollTop) {
-                        sectionBlock.classList.add('is-active');
-                        if (elTop >= docScrollTop) {
-                            console.log(sectionBlock.classList + 'top');
-                        }
-                        if (elBtm - window.innerHeight < docScrollTop) {
-                            console.log(sectionBlock.classList + 'bottom');
-                            sectionBlock.classList.add('is-bottom');
-                        } else {
-                            sectionBlock.classList.remove('is-bottom');
-                        }
-                    } else {
-                        sectionBlock.classList.remove('is-active');
-                        sectionBlock.classList.remove('is-bottom');
-                    }
-                });
+        let docScrollTop = Math.round(window.scrollY);
+        let innerGap = 100;
 
-                // header Control
-                if (mainHeader !== null) {
-                    if (docScrollTop > 0) {
-                        mainHeader.classList.add('is-shadow');
-                    } else {
-                        mainHeader.classList.remove('is-shadow');
-                    }
+        document.querySelectorAll('.main-section').forEach(sectionBlock => {
+            let elTop = sectionBlock.offsetTop;
+            let elBtm = elTop + sectionBlock.offsetHeight;
+            if (elTop <= docScrollTop && elBtm >= docScrollTop) {
+                sectionBlock.classList.add('is-active');
+                if (elTop >= docScrollTop) {
+                    console.log(sectionBlock.classList + 'top');
                 }
+                if (elBtm - window.innerHeight < docScrollTop) {
+                    console.log(sectionBlock.classList + 'bottom');
+                    sectionBlock.classList.add('is-bottom');
+                } else {
+                    sectionBlock.classList.remove('is-bottom');
+                }
+            } else {
+                sectionBlock.classList.remove('is-active');
+                sectionBlock.classList.remove('is-bottom');
             }
+        });
+
+        // header Control
+        if (mainHeader !== null) {
+            if (docScrollTop > 0) {
+                mainHeader.classList.add('is-shadow');
+            } else {
+                mainHeader.classList.remove('is-shadow');
+            }
+        }
+    }
 
     function test() {
             if (matchMedia("screen and (min-width: 1024px)").matches) {
