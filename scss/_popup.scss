@@ -486,17 +486,29 @@
     }
 
     //uniquepop mo
-    .uniquepop .pop-cont {
-        .pop-head {
-            justify-content: flex-start;
-            width: 100%;
-            .pop-txt {
-                margin-right: auto;
+    .uniquepop {
+        height: 100%;
+        border-radius: rem(0);
+        .pop-cont {
+            .pop-head {
+                justify-content: flex-start;
+                width: 100%;
+                .pop-txt {
+                    margin-right: auto;
+                }
+            }
+            .thumb > img {
+                width: 100%;
+                height: 100%;   
             }
         }
-        .thumb > img {
+    }
+
+    .dadaArtistpop {
+        height: 100%;
+        border-radius: rem(0);
+        .pop-txt {
             width: 100%;
-            height: 100%;   
         }
     }
 }

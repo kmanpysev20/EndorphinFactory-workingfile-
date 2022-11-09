@@ -3155,6 +3155,10 @@ a {
     position: relative;
     bottom: 35%;
   }
+  .uniquepop {
+    height: 100%;
+    border-radius: 0rem;
+  }
   .uniquepop .pop-cont .pop-head {
     justify-content: flex-start;
     width: 100%;
@@ -3165,6 +3169,13 @@ a {
   .uniquepop .pop-cont .thumb > img {
     width: 100%;
     height: 100%;
+  }
+  .dadaArtistpop {
+    height: 100%;
+    border-radius: 0rem;
+  }
+  .dadaArtistpop .pop-txt {
+    width: 100%;
   }
 }
 .gallery {
