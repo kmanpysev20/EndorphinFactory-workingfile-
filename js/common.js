@@ -59,6 +59,10 @@ $(document).ready(function(){
     $('#gnb-first').on('click', function() {
         $('.gnb-ef-list').toggleClass('is-open');
     });
+    $('.ef-list').on('click', function() {
+        $('.main-header').removeClass('is-gnb');
+        $('#gnb').removeClass('is-gnb');
+    });
 });
 
 //news even & odd event

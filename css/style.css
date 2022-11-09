@@ -1844,7 +1844,7 @@
   display: block;
   width: 6.875rem;
   height: 4.625rem;
-  background: url("../img/Logo_Endorphin.png") no-repeat center/cover;
+  background: url("../img/Logo_Endorphin@2x.png") no-repeat center/cover;
 }
 #header .lang-choice {
   margin-right: 1.625rem;
