@@ -173,12 +173,6 @@
   background-color: #c9fffb;
   padding: 12.5rem 0 10rem;
 }
-#sectionStory.hide {
-  opacity: 0;
-}
-#sectionStory.is-active {
-  opacity: 1;
-}
 #sectionStory .btn {
   margin-top: 2.375rem;
 }
