@@ -648,13 +648,14 @@
 
     #header .gnb-ef-list li {
         margin: rem(20) 0;
+        margin-bottom: rem(5)!important;
+        a {
+            font-size: rem(15) !important; 
+            font-weight: 500;
+            opacity: 0.6;
+        }
     }
-
-    #header .gnb-ef-list li a {
-        font-size: rem(15);
-        font-weight: 500;
-        opacity: 0.6;
-    }
+    
     #header #gnb .gnb-etc-wrap {
         display: flex;
         justify-content: center;

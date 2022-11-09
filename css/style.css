@@ -2086,9 +2086,10 @@
   }
   #header .gnb-ef-list li {
     margin: 1.25rem 0;
+    margin-bottom: 0.3125rem !important;
   }
   #header .gnb-ef-list li a {
-    font-size: 0.9375rem;
+    font-size: 0.9375rem !important;
     font-weight: 500;
     opacity: 0.6;
   }

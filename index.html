@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+    <meta name="format-detection" content="telephone=no">
     <title>Endorphin Factory</title>
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/jquery-ui.min.css">
@@ -768,7 +769,7 @@
 <!-- unique popup[e] -->
 
 <!-- dadaArtist popup[s] -->
-<div class="modal-container">
+<div class="modal-container">tit
     <div class="pop-wrap" id="dadaArtist-wrap">
         <div class="dadaArtistpop">
             <div class="pop-cont">
@@ -778,9 +779,9 @@
                 </div>
                 <p class="thumb"><img src="./img/Main-img-artist2.png" alt="아티스트 썸네일"></p>
                 <div class="sns-wrap">
-                    <li><a href="https://youtu.be/hAjBSZdI6eo" target='_blank' class="btn"><i class="ic ic-website"></i><span class="sr-only">웹사이트</span></a></li>
-                    <li><a href="https://youtu.be/GurvjVVH0KU" target='_blank' class="btn"><i class="ic ic-twitter"></i><span class="sr-only">트위터</span></a></li>
-                    <li><a href="https://youtu.be/Pn0N90CSsz8" target='_blank' class="btn"><i class="ic ic-instagram"></i><span class="sr-only">인스타그램</span></a></li>
+                    <li><a href="http://youtu.be/hAjBSZdI6eo" target='_blank' class="btn"><i class="ic ic-website"></i><span class="sr-only">웹사이트</span></a></li>
+                    <li><a href="http://youtu.be/GurvjVVH0KU" target='_blank' class="btn"><i class="ic ic-twitter"></i><span class="sr-only">트위터</span></a></li>
+                    <li><a href="http://youtu.be/Pn0N90CSsz8" target='_blank' class="btn"><i class="ic ic-instagram"></i><span class="sr-only">인스타그램</span></a></li>
                 </div>
                 <!-- 20221103 수정사항1 [s]-->
                 <div class="info-wrap">
@@ -819,12 +820,12 @@
 <!-- 20221103 수정사항 [e]-->
 
 <!-- script[s] -->
-<script src='https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js'></script>
+<!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js'></script> -->
 <script src="js/swiper.min.js"></script>
 <script type="text/javascript">
-    skrollr.init({
-        forceHeight: false
-    });
+    // skrollr.init({
+    //     forceHeight: false
+    // });
 
     // scroll event
     function changeScroll() {
@@ -872,7 +873,6 @@
                 changeScroll();
             } else {
                 console.log('mobile');
-                changeScroll();
             // 1024px 미만에서 사용할 JavaScript
             }
         }
