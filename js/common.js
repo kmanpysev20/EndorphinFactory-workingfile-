@@ -48,9 +48,11 @@ $(document).ready(function(){
     //gnb menu click event
     $('.btn-gnb').on('click', function() {
         $('.main-header').toggleClass('is-gnb');
+        $('#gnb').toggleClass('is-gnb');
     });
     $('.ic-gnb-close').on('click', function() {
         $('.main-header').removeClass('is-gnb');
+        $('#gnb').removeClass('is-gnb');
     });
     //gnb inner click event
     $('#gnb-first').on('click', function() {

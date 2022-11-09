@@ -445,5 +445,58 @@
             }
         }
     }
-    
+}
+
+@media (max-width: 1024px) {
+    //storypop mo
+    .storypop {
+        max-width: unset;
+        border-radius: unset;
+        height:100%;
+        .storypop-cont {
+            flex-direction: column;
+            align-items: center;
+            .obj-storypop-1 {
+                width: 100%;
+                background-size: 100% 100%;
+                margin-right: unset;
+            }
+            .obj-storypop-2 {
+                width: 100%;
+                background-size: 100% 100%;
+                margin-right: unset;
+            }
+            .obj-storypop-3 {
+                width: 100%;
+                background-size: 100% 100%;
+                margin-right: unset;
+            }
+            .txt {
+                max-width: unset;
+                height: 100%;
+                max-height: rem(154);
+                text-align: left;
+                margin-top : rem(60);
+            }
+        }
+        .swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+            position: relative;
+            bottom: 35%;
+        }
+    }
+
+    //uniquepop mo
+    .uniquepop .pop-cont {
+        .pop-head {
+            justify-content: flex-start;
+            width: 100%;
+            .pop-txt {
+                margin-right: auto;
+            }
+        }
+        .thumb > img {
+            width: 100%;
+            height: 100%;   
+        }
+    }
 }

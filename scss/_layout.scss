@@ -38,7 +38,7 @@
     //gnb 영역
     #gnb {
         position: fixed;
-        display: flex;
+        display: none;
         width: 100%;
         align-items: center;
         justify-content: flex-start;
@@ -588,6 +588,9 @@
         top:18%;
         left:52%;
         transform: translateX(-50%);
+        &.is-gnb {
+            display:block;
+        }
     }
     #header.is-gnb #gnb ul {
         width: 100%;
