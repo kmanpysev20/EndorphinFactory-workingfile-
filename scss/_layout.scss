@@ -500,6 +500,7 @@
     #header {
         width: 100%;
         padding: 0;
+        height: rem(100);
         &.is-gnb {
             .inner {
                 position: unset;
@@ -617,7 +618,7 @@
     }
     #header #gnb li{
         text-align: left;
-        margin-bottom: rem(30);
+        margin-bottom: rem(30) !important;
     }
 
     #header #gnb li .txt{
@@ -647,15 +648,14 @@
     }
 
     #header .gnb-ef-list li {
-        margin: rem(20) 0;
-        margin-bottom: rem(5)!important;
-        a {
-            font-size: rem(15) !important; 
-            font-weight: 500;
-            opacity: 0.6;
-        }
+        margin: rem(20) 0 !important;
     }
-    
+
+    #header .gnb-ef-list li a {
+        font-size: rem(15) !important;
+        font-weight: 500;
+        opacity: 0.6;
+    }
     #header #gnb .gnb-etc-wrap {
         display: flex;
         justify-content: center;

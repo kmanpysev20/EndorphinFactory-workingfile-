@@ -1,4 +1,4 @@
-//header sns-link-btn click event
+//header lnag-btn click event
 $(document).ready(function(){
     $('body').on('click', function(e) {
         let $tgPoint = $(e.target);
@@ -14,7 +14,7 @@ $(document).ready(function(){
         }
         //console.log($tgPoint);
     });
-    //sns-link-btn click event
+    //header sns-link-btn click event
     $('body').on('click', function(e) {
         let $tgPoint = $(e.target);
         let $snslinkbtn = $tgPoint.hasClass('sns-link-btn'); 
@@ -45,6 +45,7 @@ $(document).ready(function(){
         }
         // console.log($tgPoint);
     });
+
     //gnb menu click event
     $('.btn-gnb').on('click', function() {
         $('.main-header').toggleClass('is-gnb');
@@ -74,10 +75,6 @@ $(document).ready(function(){
         $('.news-more-btn').removeClass('is-odd');
     }
 });
-
-    // $('.news-list:odd').toggleClass('is-odd');
-    // $('.news-list:even').toggleClass('is-even')
-
 
 //top button click event
 // function btnTop() {
