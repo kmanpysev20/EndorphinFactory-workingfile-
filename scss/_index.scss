@@ -198,7 +198,12 @@
     background-color: #c9fffb;
     padding: rem(200) 0 rem(160);
     //z-index: 1;
-
+            &.hide {
+            opacity: 0;
+        }
+        &.is-active {
+            opacity: 1;
+        }
     .btn {
         margin-top: rem(38);
     }
@@ -1280,6 +1285,12 @@
     
     //story
     #sectionStory {
+        // &.hide {
+        //     opacity: 0;
+        // }
+        // &.is-active {
+        //     opacity: 1;
+        // }
         .inner {
             margin: 0 rem(24);
             .tit {

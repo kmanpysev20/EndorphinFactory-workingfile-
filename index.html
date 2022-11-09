@@ -820,7 +820,7 @@
 <!-- 20221103 수정사항 [e]-->
 
 <!-- script[s] -->
-<!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js'></script> -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js'></script>
 <script src="js/swiper.min.js"></script>
 <script type="text/javascript">
     // skrollr.init({
@@ -871,6 +871,9 @@
             if (matchMedia("screen and (min-width: 1024px)").matches) {
                 console.log('pc');
                 changeScroll();
+                skrollr.init({
+                forceHeight: false
+                });
             } else {
                 console.log('mobile');
             // 1024px 미만에서 사용할 JavaScript
