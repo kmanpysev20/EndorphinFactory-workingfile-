@@ -457,6 +457,9 @@
 #sectionArtist.is-active .bg-group .obj-line .obj-txt {
   transform: translateX(0);
 }
+#sectionArtist .inter-wrap {
+  justify-content: center;
+}
 
 #sectionArtistSub {
   background-color: #F4F4F4;
@@ -1001,6 +1004,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 1.25rem;
+  overflow: hidden;
 }
 .slide-unique .unique-list {
   text-align: center;
@@ -1014,7 +1018,7 @@
 .slide-unique .unique-list .thumb {
   position: relative;
   display: block;
-  width: 12.5rem;
+  width: 100%;
   min-width: 12.5rem;
   height: 12.5rem;
   background-repeat: no-repeat;
@@ -1179,29 +1183,22 @@
   }
 }
 @media (max-width: 1024px) {
+  #sectionIntro.is-active .contents,
+#sectionIntro.is-active .bg-group {
+    position: absolute;
+    opacity: 1 !important;
+  }
+  #sectionIntro.is-active + #sectionStory .bg-group {
+    position: absolute;
+  }
+  #sectionIntro .contents {
+    top: 3.125rem;
+  }
   #sectionIntro .txt strong {
     font-size: 1.125rem;
     font-weight: 500;
   }
-  #sectionIntro .obj-smoke {
-    display: none;
-  }
-  #sectionIntro .obj-factory {
-    display: none;
-  }
-  #sectionIntro .obj-right {
-    display: none;
-  }
-  #sectionIntro .obj-left {
-    display: none;
-  }
-  #sectionIntro .obj-field {
-    display: none;
-  }
-  #sectionIntro .obj-rocket {
-    display: none;
-  }
-  #sectionIntro .obj-en {
+  #sectionIntro [class*=obj-] {
     display: none;
   }
   #sectionIntro .mo-Main-fullbg {
@@ -1211,11 +1208,8 @@
     background-size: 100% 100%;
     background-image: url("../img/mo-Main-fullbg.jpg");
   }
-  #sectionStory.hide {
-    opacity: 0;
-  }
-  #sectionStory.is-active {
-    opacity: 1;
+  #sectionStory {
+    position: relative;
   }
   #sectionStory .inner {
     margin: 0 1.5rem;
@@ -1257,47 +1251,12 @@
   #sectionStory .bg-group::before {
     background-color: unset;
   }
-  #sectionStory .bg-group .obj-ground {
+  #sectionStory .bg-group [class*=obj-] {
     display: none;
   }
-  #sectionStory .bg-group .obj-tree-l3 {
-    display: none;
-  }
-  #sectionStory .bg-group .obj-tree-l2 {
-    display: none;
-  }
-  #sectionStory .bg-group .obj-tree-l1 {
-    display: none;
-  }
-  #sectionStory .bg-group .obj-tree-r3 {
-    display: none;
-  }
-  #sectionStory .bg-group .obj-tree-r2 {
-    display: none;
-  }
-  #sectionStory .bg-group .obj-tree-r1 {
-    display: none;
-  }
-  #sectionStory .bg-group .obj-en-l3 {
-    display: none;
-  }
-  #sectionStory .bg-group .obj-en-l2 {
-    display: none;
-  }
-  #sectionStory .bg-group .obj-en-l1 {
-    display: none;
-  }
-  #sectionStory .bg-group .obj-en-r3 {
-    display: none;
-  }
-  #sectionStory .bg-group .obj-en-r2 {
-    display: none;
-  }
-  #sectionStory .bg-group .obj-en-r1 {
-    display: none;
-  }
-  #sectionStory .bg-group .obj-gem {
-    display: none;
+  #sectionStory .bg-group .obj-flower,
+#sectionStory .bg-group .obj-grass {
+    display: block;
   }
   #sectionEndorpher .inner {
     margin: 0 1.5rem;
@@ -1420,6 +1379,9 @@
     font-size: 1rem;
     font-weight: 600;
   }
+  #sectionArtist {
+    min-height: 0rem;
+  }
   #sectionArtist .tit {
     font-size: 1.75rem;
     font-weight: bold;
@@ -1431,28 +1393,29 @@
   #sectionArtist .txt strong {
     display: none;
   }
-  #sectionArtist .inter-card-list {
-    width: 100%;
-    flex-wrap: nowrap;
+  #sectionArtist .stit {
+    margin-bottom: 1.75rem;
   }
-  #sectionArtist .inter-card-list .card-item {
+  #sectionArtist .card-item {
+    width: 17.9375rem;
+    height: 14.75rem;
     margin: 1%;
   }
-  #sectionArtist .inter-card-list .card-item .thumb {
+  #sectionArtist .card-item .thumb {
     height: 9.5rem;
   }
-  #sectionArtist .inter-card-list .card-item .thumb iframe {
-    width: 16.9375rem;
-    height: 9.5rem;
+  #sectionArtist .card-item .thumb iframe {
+    width: 100%;
+    height: 100%;
   }
-  #sectionArtist .inter-card-list .card-item .info {
-    margin: 1.25rem 0.625rem;
+  #sectionArtist .card-item .info {
+    margin: 0 0.5rem;
   }
-  #sectionArtist .inter-card-list .card-item .info small {
+  #sectionArtist .card-item .info small {
     font-size: 0.6875rem;
     margin-left: unset;
   }
-  #sectionArtist .inter-card-list .card-item .info .art-tit {
+  #sectionArtist .card-item .info .art-tit {
     font-size: 1rem;
     font-weight: 500;
     line-height: unset;
@@ -1461,7 +1424,11 @@
     font-size: 1.5rem;
     font-weight: bold;
   }
+  #sectionArtist .inter-wrap {
+    justify-content: unset;
+  }
   #sectionArtistSub {
+    min-height: 0rem;
     background-color: #fff;
   }
   #sectionArtistSub .dada-card-item {
@@ -2027,11 +1994,14 @@
 #footer .logo {
   margin-bottom: 1.25rem;
 }
-#footer .logo a {
+#footer .logo .logo-link {
   display: block;
   width: 7.5rem;
   height: 3.125rem;
   background: url("../img/footer-logo.png") no-repeat center/cover;
+}
+#footer .logo .txt-link-mo {
+  display: none;
 }
 #footer .copyright {
   display: inline-block;
@@ -2301,6 +2271,30 @@
   }
   #footer {
     padding: 0rem;
+  }
+  #footer .inner {
+    padding: 1.875rem;
+  }
+  #footer .inner .logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #footer .inner .logo .logo-link-mo {
+    position: relative;
+    display: inline-block;
+    width: 5.3125rem;
+    height: 2.1875rem;
+  }
+  #footer .inner .copyright {
+    font-size: 0.8125rem;
+    font-weight: 500;
+  }
+  #footer .inner .txt-link {
+    display: none;
+  }
+  #footer .inner .txt-link-mo {
+    display: inline-block;
   }
   #footer .obj-rail {
     position: relative;
@@ -3124,6 +3118,7 @@ a {
     max-width: unset;
     border-radius: unset;
     height: 100%;
+    max-width: unset;
   }
   .storypop .storypop-cont {
     flex-direction: column;
@@ -3158,6 +3153,7 @@ a {
   .uniquepop {
     height: 100%;
     border-radius: 0rem;
+    max-width: unset;
   }
   .uniquepop .pop-cont .pop-head {
     justify-content: flex-start;
@@ -3173,6 +3169,7 @@ a {
   .dadaArtistpop {
     height: 100%;
     border-radius: 0rem;
+    max-width: unset;
   }
   .dadaArtistpop .pop-txt {
     width: 100%;
@@ -6031,7 +6028,7 @@ a {
   margin: 0 8.125rem;
   margin-bottom: 3.1875rem;
 }
-#sectionservice .sevice-cont {
+#sectionservice .service-cont {
   width: 67rem;
   height: 100%;
   background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -6041,23 +6038,23 @@ a {
   padding: 3.125rem 6.25rem 6.375rem 6.25rem;
   margin: 0 8.125rem;
 }
-#sectionservice .sevice-cont .dt {
+#sectionservice .service-cont .dt {
   font-size: 1.75rem;
   font-weight: bold;
   padding-bottom: 1.25rem;
   border-bottom: 0.125rem solid #D2D6DA;
   margin-top: 2.5rem;
 }
-#sectionservice .sevice-cont .dt:nth-of-type(1) {
+#sectionservice .service-cont .dt:nth-of-type(1) {
   margin-top: 0.625rem;
 }
-#sectionservice .sevice-cont .dd {
+#sectionservice .service-cont .dd {
   margin-top: 1.125rem;
   font-size: 1.125rem;
   font-weight: 500;
   line-height: 1.5625rem;
 }
-#sectionservice .sevice-cont .dd > strong {
+#sectionservice .service-cont .dd > strong {
   font-weight: bold;
 }
 #sectionservice .bg-group {
@@ -6167,5 +6164,39 @@ a {
   }
   #sectionservice .bg-group .obj-grass {
     background-size: 100% 16.875rem;
+  }
+}
+@media (max-width: 1024px) {
+  #sectionservice .contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #sectionservice .contents .tit {
+    width: 100%;
+    font-size: 1.75rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1.6875rem;
+  }
+  #sectionservice .contents .service-cont {
+    width: 100%;
+    padding: 2.3125rem 1.875rem;
+  }
+  #sectionservice .contents .service-cont .txt {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #1A1F27;
+  }
+  #sectionservice .contents .service-cont .dt {
+    font-size: 1.125rem;
+    font-weight: bold;
+  }
+  #sectionservice .contents .service-cont .dd {
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+  #sectionservice .bg-group-gem {
+    display: none;
   }
 }

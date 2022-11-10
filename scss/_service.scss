@@ -17,7 +17,7 @@
         margin: 0 rem(130);
         margin-bottom:rem(51);
     }
-    .sevice-cont {
+    .service-cont {
         width: rem(1072);
         height: 100%;
         background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -158,3 +158,39 @@
     }
 }
 
+@media (max-width: 1024px) {
+    #sectionservice {
+        .contents {
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            .tit {
+                width: 100%;
+                font-size: rem(28);
+                font-weight: bold;
+                text-align: center;
+                margin-bottom: rem(27);
+            }
+            .service-cont {
+                width: 100%;
+                padding : rem(37) rem(30);
+                .txt {
+                    font-size: rem(14);
+                    font-weight: 500;
+                    color:#1A1F27;
+                }
+                .dt {
+                    font-size: rem(18);
+                    font-weight: bold;
+                }
+                .dd {
+                    font-size: rem(14);
+                    font-weight: 500;
+                }
+            }
+        }
+        .bg-group-gem {
+            display:none;
+        }
+    }
+}

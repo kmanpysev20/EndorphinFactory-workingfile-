@@ -393,34 +393,32 @@
                     <!-- 20221101 수정사항5 [e] -->
                     <h3 class="stit">DADA Artist Interview</h3>
                     <div class="swiper-container slide-artist">
-                        <div class="swiper-wrapper">
-                            <div class="inter-card-list">
-                                <div class="card-item">
-                                    <p class="thumb"><iframe width="320" height="180" src="https://www.youtube.com/embed/hAjBSZdI6eo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
-                                    <div class="info">
-                                        <small>Endorphin Factory</small>
-                                        <!-- 20221103 수정사항2 [s] -->
-                                        <p class="tit art-tit">[엔돌핀 팩토리 X 도파민최] 팝아티스트 도파민최 작가 인터뷰</p>
-                                        <!-- 20221103 수정사항2 [e] -->
-                                    </div>
+                        <div class="swiper-wrapper inter-wrap">
+                            <div class="swiper-slide card-item">
+                                <p class="thumb"><iframe width="320" height="180" src="https://www.youtube.com/embed/hAjBSZdI6eo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+                                <div class="info">
+                                    <small>Endorphin Factory</small>
+                                    <!-- 20221103 수정사항2 [s] -->
+                                    <p class="tit art-tit">[엔돌핀 팩토리 X 도파민최] 팝아티스트 도파민최 작가 인터뷰</p>
+                                    <!-- 20221103 수정사항2 [e] -->
                                 </div>
-                                <div class="card-item">
-                                    <p class="thumb"><iframe width="320" height="180" src="https://www.youtube.com/embed/GurvjVVH0KU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
-                                    <div class="info">
-                                        <small>Endorphin Factory</small>
-                                        <!-- 20221103 수정사항2 [s] -->
-                                        <p class="tit art-tit">[엔돌핀 팩토리 X OZO] 팝아티스트 오조 작가 인터뷰</p>
-                                        <!-- 20221103 수정사항2 [e] -->
-                                    </div>
+                            </div>
+                            <div class="swiper-slide card-item">
+                                <p class="thumb"><iframe width="320" height="180" src="https://www.youtube.com/embed/GurvjVVH0KU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+                                <div class="info">
+                                    <small>Endorphin Factory</small>
+                                    <!-- 20221103 수정사항2 [s] -->
+                                    <p class="tit art-tit">[엔돌핀 팩토리 X OZO] 팝아티스트 오조 작가 인터뷰</p>
+                                    <!-- 20221103 수정사항2 [e] -->
                                 </div>
-                                <div class="card-item">
-                                    <p class="thumb"><iframe width="320" height="180" src="https://www.youtube.com/embed/Pn0N90CSsz8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
-                                    <div class="info">
-                                        <small>Endorphin Factory</small>
-                                        <!-- 20221103 수정사항2 [s] -->
-                                        <p class="tit art-tit">[엔돌핀 팩토리 X FORI] 팝아티스트 포리 작가 인터뷰</p>
-                                        <!-- 20221103 수정사항2 [e] -->
-                                    </div>
+                            </div>
+                            <div class="swiper-slide card-item">
+                                <p class="thumb"><iframe width="320" height="180" src="https://www.youtube.com/embed/Pn0N90CSsz8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+                                <div class="info">
+                                    <small>Endorphin Factory</small>
+                                    <!-- 20221103 수정사항2 [s] -->
+                                    <p class="tit art-tit">[엔돌핀 팩토리 X FORI] 팝아티스트 포리 작가 인터뷰</p>
+                                    <!-- 20221103 수정사항2 [e] -->
                                 </div>
                             </div>
                         </div>
@@ -578,9 +576,14 @@
     <footer id="footer" class="main-footer">
         <i class="obj-rail"></i>
         <div class="inner">
-            <p class="logo"><a href="#"><span class="sr-only">DILLION META</span></a></p>
-            <p class="copyright">COPYRIGHT © DILLION META. ALL RIGHTS RESERVED.</p>
-            <a href="/subpage/service.html" class="txt-link">이용약관</a>
+            <p class="logo">
+                <a href="#" class="logo-link logo-link-mo">
+                    <span class="sr-only">DILLION META</span>
+                </a>
+                <a hr0ef="/subpage/service.html" class="txt-link txt-link-mo">이용약관</a>
+            </p>
+            <p class="copyright"><span class="txt-br">COPYRIGHT © DILLION META. ALL RIGHTS RESERVED.</span></p>
+            <a hr0ef="/subpage/service.html" class="txt-link">이용약관</a>
         </div>
         <!-- 20221101 수정사항6 [s] -->
         <!-- <i class="obj-rail"></i> -->
@@ -832,11 +835,11 @@
                 changeScroll();
 
                 skrollr.init({
-                forceHeight: false
+                    forceHeight: false
                 });
             } else {
                 console.log('mobile');
-            // 1024px 미만에서 사용할 JavaScript
+                changeScroll();
             }
     }
         
@@ -906,7 +909,9 @@ let artistmoSwiper = undefined;
 function initmoSwiper() {
   if (wm < 1024 && artistmoSwiper == undefined) {
     artistmoSwiper = new Swiper(".slide-artist", {
-        slidesPerView : 3,
+        slidesPerView: "auto",
+        initialSlide: 1,
+        spaceBetween: 30,
         centeredSlides: true,
 
     });

@@ -374,11 +374,14 @@
     }
     .logo {
         margin-bottom: rem(20);
-        a {
+        .logo-link {
             display: block;
             width: rem(120);
             height: rem(50);
             background: url("../img/footer-logo.png") no-repeat center / cover;
+        }
+        .txt-link-mo {
+            display:none;
         }
     }
     .copyright {
@@ -686,6 +689,31 @@
     //footer
     #footer {
         padding: rem(0);
+        .inner {
+            padding: rem(30);
+            .logo {
+                display:flex;
+                align-items: center;
+                justify-content: space-between;
+                .logo-link-mo {
+                    position: relative;
+                    display:inline-block;
+                    width: rem(85);
+                    height: rem(35);
+                }
+            }
+            .copyright {
+                font-size: rem(13);
+                font-weight: 500;
+
+            }
+            .txt-link {
+                display:none;
+            }
+            .txt-link-mo {
+                display:inline-block;
+            }
+        }
         .obj-rail {
             position: relative;
             height: 100%;

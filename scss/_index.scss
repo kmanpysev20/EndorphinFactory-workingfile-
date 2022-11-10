@@ -497,6 +497,9 @@
             transform: translateX(0);
         }
     }
+    .inter-wrap {
+        justify-content: center;
+    }
 }
 
 #sectionArtistSub {
@@ -1053,6 +1056,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: rem(20);
+    overflow: hidden;
     // .unique-wrap {
 
     // }
@@ -1067,7 +1071,7 @@
         .thumb {
             position: relative;
             display: block;
-            width: rem(200);
+            width: 100%;
             min-width: rem(200);
             height: rem(200);
             background-repeat: no-repeat;
@@ -1241,37 +1245,35 @@
 }
 
 @media (max-width: 1024px) {
+    #sectionIntro.is-active {
+        .contents,
+        .bg-group {
+            position: absolute;
+            opacity: 1 !important;
+        }
+        +  #sectionStory {
+            .bg-group {
+                position: absolute;
+            }
+        }
+    }
+
     //intro
     #sectionIntro {
+        .contents {
+            top: rem(50);
+        }
         .txt strong {
             font-size: rem(18);
             font-weight: 500;
         }
-        .obj-smoke {
+        [class*='obj-'] {
             display:none;
-        } 
-        .obj-factory {
-            display:none;
-        } 
-        .obj-right {
-            display:none;
-        } 
-        .obj-left {
-            display:none;
-        } 
-        .obj-field {
-            display:none;
-        } 
-        .obj-rocket {
-            display:none;
-        } 
-        .obj-en {
-            display:none;
-        } 
+        }
         .mo-Main-fullbg {
             width: 100%;
             height: rem(359);
-            bottom:0;
+            bottom: 0;
             background-size: 100% 100%;
             background-image: url("../img/mo-Main-fullbg.jpg");
         }
@@ -1279,12 +1281,7 @@
     
     //story
     #sectionStory {
-        &.hide {
-            opacity: 0;
-        }
-        &.is-active {
-            opacity: 1;
-        }
+        position: relative;
         .inner {
             margin: 0 rem(24);
             .tit {
@@ -1326,47 +1323,13 @@
             &::before {
                 background-color: unset;
             }
-            .obj-ground {
+            [class*='obj-'] {
                 display:none;
             }
-            .obj-tree-l3 {
-                display:none;
-            }
-            .obj-tree-l2 {
-                display:none;
-            }
-            .obj-tree-l1 {
-                display:none;
-            }
-            .obj-tree-r3 {
-                display:none;
-            }
-            .obj-tree-r2 {
-                display:none;
-            }
-            .obj-tree-r1 {
-                display:none;
-            }
-            .obj-en-l3 {
-                display:none;
-            }
-            .obj-en-l2 {
-                display:none;
-            }
-            .obj-en-l1 {
-                display:none;
-            }
-            .obj-en-r3 {
-                display:none;
-            }
-            .obj-en-r2 {
-                display:none;
-            }
-            .obj-en-r1 {
-                display:none;
-            }
-            .obj-gem {
-                display:none;
+            
+            .obj-flower,
+            .obj-grass {
+                display: block;
             }
         }
     }
@@ -1506,6 +1469,7 @@
     }
 
     #sectionArtist {
+        min-height: rem(0);
         .tit {
             font-size: rem(28);
             font-weight: bold;
@@ -1517,39 +1481,46 @@
                 display:none;
             }
         }
-        .inter-card-list {
-            width: 100%;
-            flex-wrap: nowrap;
-            .card-item {
-                margin: 1%;
-                .thumb {
-                    height: rem(152);
-                    iframe {
-                        width: rem(271);
-                        height: rem(152);
-                    }
+        .stit {
+            margin-bottom: rem(28);
+        }
+
+        .card-item {
+            width: rem(287);
+            height: rem(236);
+            margin: 1%;
+            .thumb {
+                height: rem(152);
+                iframe {
+                    width: 100%;
+                    height: 100%;
                 }
-                .info {
-                    margin: rem(20) rem(10);
-                    small {
-                        font-size: rem(11);
-                        margin-left: unset;
-                    }
-                    .art-tit {
-                        font-size: rem(16);
-                        font-weight: 500;
-                        line-height: unset;
-                    }
+            }
+            .info {
+                margin: 0 rem(8);
+                small {
+                    font-size: rem(11);
+                    margin-left: unset;
+                }
+                .art-tit {
+                    font-size: rem(16);
+                    font-weight: 500;
+                    line-height: unset;
                 }
             }
         }
+        
         .stit {
             font-size: rem(24);
             font-weight: bold;
         }
+        .inter-wrap {
+            justify-content: unset;
+        }
     }
 
     #sectionArtistSub {
+        min-height: rem(0);
         background-color: #fff;
         .dada-card-item {
             margin: 1%;
