@@ -78,8 +78,8 @@
                 </li>
                 <li class="menu-ef-btn popup-open" data-popup="info-pop"><a href="#.">Factory Shop</a></li>
                 <li class="menu-ef-btn popup-open" data-popup="info-pop"><a href="#.">Gallery</a></li>
-                <li class="menu-ef-btn"><a href="/subpage/roadmap.html">Roadmap</a></li>
-                <li class="menu-ef-btn"><a href="/subpage/news.html">News</a></li>
+                <li><a href="../subpage/roadmap.html" class="txt">ROADMAP</a></li>
+                <li><a href="../subpage/news.html" class="txt">NEWS</a></li>
                 <li class="menu-ef-btn popup-open" data-popup="info-pop"><a href="#.">Minting Guide</a></li>
                 <div class="gnb-etc-wrap">
                     <a href="javascript:vold(0);" class="btn btn-md btn-mypage"><i class="ic ic-gem gem-xs"></i>MY PAGE</a>
@@ -272,19 +272,19 @@
 <!-- info popup[e] -->
 
 <!-- script[s] -->
+<script src="js/swiper.min.js"></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js'></script>
 <script type="text/javascript">
-    skrollr.init({
-        forceHeight: false
-    });
-    
+
+    // scroll event
     function changeScroll() {
         const mainHeader = document.querySelector('.main-header'),
-            mainFooter = document.querySelector('.main-footer');
+        mainFooter = document.querySelector('.main-footer'),
+        sectionFaq = document.querySelector('#sectionFaq');
 
         let docScrollTop = Math.round(window.scrollY);
         let innerGap = 100;
-        
+
         document.querySelectorAll('.main-section').forEach(sectionBlock => {
             let elTop = sectionBlock.offsetTop;
             let elBtm = elTop + sectionBlock.offsetHeight;
@@ -314,27 +314,52 @@
             }
         }
     }
-    // onload
-    window.onload = function() {
-    changeScroll();
-    };
-    // onscroll
-    window.onscroll = function() {
-        changeScroll();
-    };
 
-    //info popup
-    $(function () {
-        $("#menu-btn1,#menu-btn2,#menu-btn3,#menu-btn4,#menu-btn5").click(function () {
-            $("#info-pop").css('display', 'flex').hide().fadeIn('fast');
-        });
-        $(".pop-close-btn").click(function () {
-            modalClose();
-        });
-        function modalClose() {
-            $("#info-pop").fadeOut();
-        }
+    //pc or mobile js check
+    function test() {
+            if (matchMedia("screen and (min-width: 1024px)").matches) {
+                console.log('pc');
+                changeScroll();
+                //skrollr control
+                skrollr.init({
+                    forceHeight: false
+                });
+
+            } else {
+                console.log('mobile');
+            }
+    }
+        
+     // onload
+    window.addEventListener('load', function(event) {
+        test();
+        changeScroll();
+    }, true);
+
+    //onresize
+    window.addEventListener('resize', function(event) {
+        test();
+        changeScroll();
+    }, true);
+
+    // onscroll
+    window.addEventListener('scroll', function(event) {
+        test();
+        changeScroll();
+    }, true);
+
+// Popup Control
+function popupControl() {
+    $(".popup-open").on('click', function () {
+        const popId = $(this).data('popup');
+        $("#"+popId).css('display', 'flex').hide().fadeIn('fast');
+        console.log(popId);
     });
+    $(".pop-close-btn").on('click', function () {
+        $(this).parents('.pop-wrap').fadeOut();
+    });
+};
+popupControl();
 
 </script>
 <!-- script[e] -->
