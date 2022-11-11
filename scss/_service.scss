@@ -59,8 +59,10 @@
             bottom:0;
             width: 100%;
             min-width: rem(1920);
-            height: rem(482);
+            height: rem(352);
             background-image: url("../img/img-ground.png");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
         }
         .sv-obj-flower {
             bottom: 0;
@@ -68,6 +70,8 @@
             min-width: rem(1920);
             height: rem(270);
             background-image: url("../img/obj-flower.png");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
         }
         .sv-obj-grass {
             bottom: rem(-33);
@@ -75,6 +79,8 @@
             min-width: rem(1920);
             height: rem(270);
             background-image: url("../img/obj-grass.png");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
         }
     }
     .bg-group-gem {
@@ -126,15 +132,15 @@
         }
         .obj-gem-r2 {
             position: absolute;
-            top: rem(589);
+            top: rem(365);
             margin-left: rem(788);
             width: rem(36);
             height: rem(48);
         }
         .obj-gem-r3 {
             position: absolute;
-            top: rem(554);
-            margin-left: rem(994);
+            top: rem(458);
+            margin-left: rem(882);
             width: rem(25);
             height: rem(34);
         }

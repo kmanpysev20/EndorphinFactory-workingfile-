@@ -6348,8 +6348,10 @@ a {
   bottom: 0;
   width: 100%;
   min-width: 120rem;
-  height: 30.125rem;
+  height: 22rem;
   background-image: url("../img/img-ground.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 #sectionservice .bg-group .sv-obj-flower {
   bottom: 0;
@@ -6357,6 +6359,8 @@ a {
   min-width: 120rem;
   height: 16.875rem;
   background-image: url("../img/obj-flower.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 #sectionservice .bg-group .sv-obj-grass {
   bottom: -2.0625rem;
@@ -6364,6 +6368,8 @@ a {
   min-width: 120rem;
   height: 16.875rem;
   background-image: url("../img/obj-grass.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 #sectionservice .bg-group-gem {
   background-color: #F4F4F4;
@@ -6415,15 +6421,15 @@ a {
 }
 #sectionservice .bg-group-gem .obj-gem-r2 {
   position: absolute;
-  top: 36.8125rem;
+  top: 22.8125rem;
   margin-left: 49.25rem;
   width: 2.25rem;
   height: 3rem;
 }
 #sectionservice .bg-group-gem .obj-gem-r3 {
   position: absolute;
-  top: 34.625rem;
-  margin-left: 62.125rem;
+  top: 28.625rem;
+  margin-left: 55.125rem;
   width: 1.5625rem;
   height: 2.125rem;
 }
