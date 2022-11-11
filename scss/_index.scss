@@ -364,7 +364,7 @@
         .en-cont {
             display: flex;
             flex-direction: column;
-            padding: 0 rem(30);
+            align-items: center;
             .thumb {
                 position: relative;
                 width: rem(380);
@@ -390,7 +390,7 @@
                 font-weight: 400;
                 margin-bottom:rem(20);
             }
-            > p {
+            > .txt {
                 width: 100%;
                 min-width: rem(432);
                 font-size: rem(18);
@@ -441,6 +441,17 @@
     .pfp-tit {
         font-size: rem(32);
         font-size: 500;
+    }
+    .thumb {
+        .tit {
+            font-size: rem(24);
+            font-weight: bold;
+            .txt {
+                font-size: rem(18);
+                font-weight: 400;
+                margin-top: rem(0);
+            }
+        }
     }
 }
 
@@ -619,6 +630,7 @@
             display:flex;
             justify-content: center;
             align-items: center;
+            flex-wrap: wrap;
             .partner-item {
                 min-width: rem(312);
                 height:rem(80);
@@ -1260,12 +1272,29 @@
 
     //intro
     #sectionIntro {
+        padding-left: rem(24);
+        padding-right: rem(24);
         .contents {
+            width: 100%;
             top: rem(50);
-        }
-        .txt strong {
-            font-size: rem(18);
-            font-weight: 500;
+            .tit {
+                width: 100%;
+                > img {
+                    width: rem(219);
+                }
+            }
+            .txt {
+                font-size: rem(18);
+                font-weight: 500;
+                margin-top : rem(25);
+                strong {
+                    font-size: inherit;
+                    font-weight: inherit;
+                    .ic-gem {
+                        display:none;
+                    }
+                }
+            }
         }
         [class*='obj-'] {
             display:none;
@@ -1282,14 +1311,17 @@
     //story
     #sectionStory {
         position: relative;
+        padding: rem(41) rem(24);
         .inner {
-            margin: 0 rem(24);
+            // margin: 0 rem(24);
             .tit {
                 font-size: rem(28);
             }
             .txt  {
                 font-size: rem(16);
-                font-weight: 500;
+                font-weight: 400;
+                margin-top : rem(20);
+                margin-bottom: rem(30);
                 strong {
                     font-size: rem(18);
                     font-weight: 500;
@@ -1301,20 +1333,47 @@
                 font-size : rem(16);
                 text-align: center;
                 white-space: pre-wrap;
+                margin-top: unset;
+                border: rem(2) solid #000;
+                .ic-gem-white {
+                    width: rem(19);
+                    height: rem(25);
+                }
             }
+            .ic-scroll {
+                width: rem(26);
+                height: rem(36);
+                background-image: url("../img/Main-mo-ic-Chevron-.png");
+            }
+            .stit {
+                font-size: rem(28);
+                font-weight: 400;
+                margin-bottom: rem(0);
+            }
+
             .video-cont {
                 flex-wrap: wrap;
+                width: 100%;
                 .video-wrap {
-                    width: 100%;
-                    height: 100%;
+                    width: rem(348);
+                    height: rem(261);
+                    .thumb {
+                        width: 100%;
+                        height: rem(150);
+                        iframe {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
                     .tit {
                         font-size: rem(16);
-                        font-weight: 500;
+                        font-weight: 400;
                         color:#000;
+                        margin: rem(20) 0;
                     }
-                    iframe {
-                        width: 100%;
-                        height: rem(261);
+                    .txt {
+                        font-size: rem(16);
+                        font-weight: 400;
                     }
                 }
             }
@@ -1326,16 +1385,20 @@
             [class*='obj-'] {
                 display:none;
             }
-            
-            .obj-flower,
-            .obj-grass {
+            .obj-mo-story-bg {
                 display: block;
+                width: 100%;
+                height: rem(85);
+                bottom:0;
+                background-size: 100% 100%;
+                background-image: url("../img/Main-mo-story-bg.png");
             }
         }
     }
 
     //Endorpher
     #sectionEndorpher {
+        padding: rem(51) rem(24);
         .inner {
             margin: 0 rem(24);
             .tit {
@@ -1347,33 +1410,54 @@
             }
             .cont-wrap {
                 flex-wrap: wrap;
-                .thumb {
-                    width: 100%;
-                    padding-bottom: 100%;
-                }
+                margin-top: rem(50);
                 .en-cont {
-                    p {
-                        min-width: 0;
-                        margin-bottom: rem(30);
+                    .thumb {
+                        width: 100%;
+                        max-width: rem(260);
+                        height: rem(260);
+                        padding-bottom: unset;
+                        > img {
+                            width: 100%;
+                            height: 100%;
+                        }
                     }
                     dt {
                         font-size: rem(20);
+                        font-weight: bold;
                     }
                     dd {
                         font-size: rem(20);
+                        font-weight: 400;
+                    }
+                    .txt {
+                        width: rem(322);
+                        font-size: rem(16);
+                        font-weight: 500;
+                        margin-bottom: rem(30);
+                        min-width: unset;
+                        > br {
+                            display:none;
+                        }
+
                     }
                 }
             }
         }
     }
     #sectionPFP {
+        padding: rem(58) rem(24);
         .tit {
             font-size: rem(24);
             font-weight: bold;
-        }
-        .txt {
-            font-size: rem(16);
-            font-weight: 500;
+            line-height: rem(24);
+            .txt {
+                font-size: rem(16);
+                font-weight: 500;
+                > br {
+                    display:none;
+                }
+            }
         }
 
         .slide-pfp {
@@ -1420,9 +1504,14 @@
                         max-width: rem(342);
                     }
                     .tit {
-                        font-size: rem(16);
-                        font-weight: 500;
-                        margin-bottom: rem(23);
+                        font-size: rem(24);
+                        font-weight:bold;
+                        .txt {
+                            font-size: rem(16);
+                            font-weight: 400;
+                            margin-top: rem(20);
+                            margin-bottom: rem(33);
+                        }
                     }
                     dd {
                         display:none;
@@ -1453,6 +1542,9 @@
         }
         .txt {
             font-size: rem(16);
+            > br {
+                display: none;
+            }
         }
         .slide-wrap {
             width: 100%;
@@ -1469,6 +1561,7 @@
     }
 
     #sectionArtist {
+        padding: rem(51) rem(24);
         min-height: rem(0);
         .tit {
             font-size: rem(28);
@@ -1476,12 +1569,18 @@
             line-height: rem(35);
         }
         .txt {
+            margin-top : rem(20);
             font-size: rem(16);
+            font-weight: 400;
+            > br {
+                display:none;
+            }
             strong {
                 display:none;
             }
         }
         .stit {
+            margin-top : rem(50);
             margin-bottom: rem(28);
         }
 
@@ -1520,14 +1619,26 @@
     }
 
     #sectionArtistSub {
+        padding: rem(55) rem(24);
         min-height: rem(0);
         background-color: #fff;
+        .stit {
+            line-height: rem(0);
+            margin-bottom: rem(30);
+        }
+
         .dada-card-item {
             margin: 1%;
         }
         .thumb {
             width: rem(146);
             height: rem(146);
+            margin: rem(12) 0;
+        }
+        .txt {
+            margin-top: rem(0);
+            font-size: rem(14);
+            font-weight: 400;
         }
         .artist-more-btn {
             display: inline-flex;
@@ -1539,47 +1650,67 @@
     }
 
     #sectionPartner{
+        padding: rem(58) rem(24);
         .cont-tit {
             display:flex;
             flex-direction: column;
             .tit {
                 width: 100%;
                 text-align: center;
+                line-height: rem(38);
                 margin-bottom: 6%;
                 font-size: rem(32);
             }
-        }
-        .partner-btn {
-            font-size: rem(16);
-            border: rem(2) solid #000;
+            .partner-btn {
+                font-size: rem(16);
+                border: rem(2) solid #000;
+            }
         }
         .partner-hr {
             display:none;
         }
-        .partner-info {
-            width: 100%;
-            margin-top : 8%;
-        }
-        .cont-wrap .partner-info > dd {
-            width: 100%;
-        }
-        .cont-wrap .partner-info .obj-paint {
-            width: rem(80);
-        }
-        .tit {
-            margin-right: unset;
-            margin-bottom: rem(20);
-            text-align: center;
-            font-size: rem(28);
+        .cont-wrap {
+            .partner-info {
+                width: 100%;
+                margin-top : 8%;
+                > dt {
+                    font-size: rem(20);
+                    font-weight: bold;
+                }
+                > dd {
+                    font-size: rem(16);
+                    font-weight: 400;
+                    width: 100%;
+                }
+                .obj-paint {
+                    width: rem(80);
+                }
+            }
         }
     }
 
     #sectionPartnerSub {
-        .partner-list {
-            flex-wrap: wrap;
+        padding: rem(50) rem(24) rem(100);
+        .mt {
+            .tit {
+                font-size: rem(20);
+                font-weight: bold;
+                margin-bottom: rem(30);
+            }
+            .partner-list {
+                flex-wrap: wrap;
+                .partner-item {
+                    width: 100%;
+                    max-width: rem(270);
+                    min-width: unset;
+                    height: rem(80);
+                }
+            }
         }
+
     }
     #sectionFaq {
+        padding: rem(51) rem(24);
         .contents {
             flex-direction: column;
             .tit {
@@ -1589,11 +1720,22 @@
                 font-size: rem(28);
                 font-weight: bold;
                 margin-bottom:10%;
-                
+                line-height: rem(38);
+                .faq-firstbr {
+                    display:none;
+                }
             }
             .faq-list {
                 width: 100%;
                 margin: rem(0);
+                .faq-q {
+                    padding: rem(18) 0 0 rem(15);
+                }
+                .faq-a {
+                    margin-top : rem(10);
+                    font-size: rem(16);
+                    font-weight: 400;
+                }
             }
         }
         .bg-group {

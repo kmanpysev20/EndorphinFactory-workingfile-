@@ -36,7 +36,6 @@
                 margin-top: rem(10);
             }
         } 
-
         .dd {
             margin-top: rem(18);
             font-size: rem(18);
@@ -44,6 +43,9 @@
             line-height: rem(25);
             > strong {
                 font-weight: bold;
+            }
+            .sv-br {
+                display:none;
             }
         }
     }
@@ -160,6 +162,7 @@
 
 @media (max-width: 1024px) {
     #sectionservice {
+        padding: rem(151) rem(24);
         .contents {
             display:flex;
             flex-direction: column;
@@ -176,7 +179,7 @@
                 padding : rem(37) rem(30);
                 .txt {
                     font-size: rem(14);
-                    font-weight: 500;
+                    font-weight: 400;
                     color:#1A1F27;
                 }
                 .dt {
@@ -185,12 +188,26 @@
                 }
                 .dd {
                     font-size: rem(14);
-                    font-weight: 500;
+                    font-weight: 400;
+                    > br {
+                        display: inline;
+                    }
                 }
             }
         }
-        .bg-group-gem {
+        [class*='sv-obj-'] {
             display:none;
+        }
+        [class*='bg-group-gem'] {
+            display:none;
+        }
+        .sv-obj-mo-bg {
+            bottom: 0;
+            width: 100%;
+            height: rem(240);
+            background-size: 100% 100%;
+            background-image: url("../img/Service-mo-bg.png");
+            display:block;
         }
     }
 }

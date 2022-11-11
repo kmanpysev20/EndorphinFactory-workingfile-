@@ -174,6 +174,9 @@
         .obj-storypop-3 {
             background-image: url(../img/obj-storypop-bg3.png);
         }
+        .tit-mo {
+            display:none;
+        }
         .txt {
             overflow-y: scroll;
             width: 100%;
@@ -454,65 +457,187 @@
         border-radius: unset;
         height:100%;
         max-width: unset;
+        .pop-cont {
+            padding: rem(38) rem(24);
+            .pop-head {
+                align-items: center;
+                .pop-tit {
+                    font-size: rem(20);
+                    font-weight: bold;
+                    .tit-mo-none {
+                        display:none;
+                    }
+                }
+            }
+        }
+        .storypop-slide {
+            width: 100%;
+            .tit {
+                display:none;
+            }
+        }
         .storypop-cont {
             flex-direction: column;
             align-items: center;
             .obj-storypop-1 {
                 width: 100%;
+                min-width: rem(342);
+                height:rem(243);
+                border: rem(4) solid #000;
                 background-size: 100% 100%;
                 margin-right: unset;
             }
             .obj-storypop-2 {
                 width: 100%;
+                min-width: rem(342);
+                height:rem(243);
+                border: rem(4) solid #000;
                 background-size: 100% 100%;
                 margin-right: unset;
             }
             .obj-storypop-3 {
                 width: 100%;
+                min-width: rem(342);
+                height:rem(243);
+                border: rem(4) solid #000;
                 background-size: 100% 100%;
                 margin-right: unset;
+            }
+            .tit-mo {
+                display:block;
+                text-align: left;
+                width: 100%;
+                font-size : rem(22);
+                font-weight: bold;
+                margin-top:rem(78);
             }
             .txt {
                 max-width: unset;
                 height: 100%;
                 max-height: rem(154);
                 text-align: left;
-                margin-top : rem(60);
+                margin-top : rem(20);
+                line-height: rem(27);
+                padding: 0 rem(6);
+                > br {
+                    display: none;
+                }
             }
         }
         .swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
             position: relative;
-            bottom: 35%;
+            bottom: 51%;
         }
     }
 
     //uniquepop mo
     .uniquepop {
-        height: 100%;
-        border-radius: rem(0);
+        max-width: unset;
+        border-radius: unset;
+        height:100%;
         max-width: unset;
         .pop-cont {
+                padding: rem(38) rem(24);
             .pop-head {
-                justify-content: flex-start;
+                justify-content: center;
                 width: 100%;
+                margin-bottom: rem(58);
                 .pop-txt {
+                    font-size: rem(20);
+                    font-weight: bold;
                     margin-right: auto;
                 }
             }
-            .thumb > img {
+            .thumb {
                 width: 100%;
-                height: 100%;   
+                min-width: rem(342);
+                height: rem(342);
+                padding: unset;
+                margin :unset;
+                > img {
+                width: 100%;
+                height: 100%;
+                border : rem(4) solid #000;
+                }
+            }
+            .info-wrap {
+                width: 100%;
+                dt {
+                    font-size : rem(20);
+                    margin-top : rem(20);
+                }
+                dd {
+                   font-size: rem(16); 
+                   font-weight: 400;
+                }
+                .txt {
+                    height: 100%;
+                    max-height: rem(154);
+                    line-height: rem(27);
+                    padding: 0 rem(6);
+                    > br {
+                        display: none;
+                    }
+                }
             }
         }
-        
     }
 
+
+    //dadaArtist mo
     .dadaArtistpop {
-        height: 100%;
-        border-radius: rem(0);
         max-width: unset;
-        .pop-txt {
+        border-radius: unset;
+        height:100%;
+        max-width: unset;
+        .pop-cont {
+            padding: rem(38) rem(24);
+        .pop-head {
+            justify-content: center;
             width: 100%;
+            margin-bottom: rem(58);
+            .pop-txt {
+                font-size: rem(20);
+                font-weight: bold;
+                margin-right: auto;
+            }
+        }
+        .thumb {
+            width: 100%;
+            min-width: rem(342);
+            height: rem(342);
+            padding: unset;
+            margin :unset;
+            > img {
+            width: 100%;
+            height: 100%;
+            border : rem(4) solid #000;
+            }
+        }
+        .sns-wrap {
+            margin-top : rem(30);
+        }
+
+        .info-wrap {
+            width: 100%;
+            dt {
+                font-size : rem(20);
+                margin-top : rem(20);
+            }
+            dd {
+               font-size: rem(16); 
+               font-weight: 400;
+            }
+            .txt {
+                height: 100%;
+                max-height: rem(154);
+                line-height: rem(27);
+                padding: 0 rem(6);
+                > br {
+                    display: none;
+                }
+            }
+        }
         }
     }
 }

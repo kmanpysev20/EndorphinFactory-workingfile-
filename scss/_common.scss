@@ -40,6 +40,9 @@ body {
   height: 100%;
   line-height: 1;
   overflow-x: hidden;
+  &.fixed {
+    position: fixed;
+  }
 }
 
 ol, li {

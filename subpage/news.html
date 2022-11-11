@@ -23,40 +23,34 @@
     <!-- header[s] -->
     <header id="header" class="main-header">
         <div class="inner header-inner">
-            <h1 class="logo"><a href="/index.html"><span class="sr-only">ENDORPHIN FACTORY</span></a></h1>
+            <h1 class="logo"><a href="#sectionIntro"><span class="sr-only">ENDORPHIN FACTORY</span></a></h1>
             <ul class="menu-list">
                 <li class="menu-ef-btn">
                     Endorphin Factory
                     <ul class="ef-list">
-                        <!-- 20221101 수정사항1 [s] -->
-                        <li><a href="/index.html#sectionStory">프로젝트 소개</a></li>
-                        <li><a href="/index.html#sectionEndorpher">엔도르퍼</a></li>
-                        <li><a href="/index.html#sectionArtist">DADA</a></li>
-                        <li><a href="/index.html#sectionPartner">파트너</a></li>
-                        <li><a href="/index.html#sectionFaq">FAQ</a></li>
-                        <!-- 20221101 수정사항1 [e] -->
+                        <li><a href="../index.html#sectionStory">프로젝트 소개</a></li>
+                        <li><a href="../index.html#sectionEndorpher">엔도르퍼</a></li>
+                        <li><a href="../index.html#sectionArtist">DADA</a></li>
+                        <li><a href="../index.html#sectionPartner">파트너</a></li>
+                        <li><a href="../index.html#sectionFaq">FAQ</a></li>
                     </ul>
                 </li>
-                <!-- 20221103 수정사항 [s] -->
                 <li class="menu-ef-btn" id="menu-btn1"><a href="#.">Factory Shop</a></li>
                 <li class="menu-ef-btn" id="menu-btn2"><a href="#.">Gallery</a></li>
                 <li class="menu-ef-btn" id="menu-btn3"><a href="/subpage/roadmap.html">Roadmap</a></li>
                 <li class="menu-ef-btn" id="menu-btn4"><a href="/subpage/news.html">News</a></li>
                 <li class="menu-ef-btn" id="menu-btn5"><a href="#.">Minting Guide</a></li>
-                <!-- 20221103 수정사항 [e] -->
             </ul>
             <div class="menu-etc">
                 <a href="javascript:vold(0);" class="btn btn-md btn-mypage"><i class="ic ic-gem gem-xs"></i>MY PAGE</a>
                 <div class="lang-choice">
                     <p class="sr-only">언어 선택</p>
-                    <!-- 20221103 수정사항 [s] -->
                     <button type="button" class="btn btn-md bd-none btn-lang">KR
                         <ul class="lang-list">
                             <li>KR</li>
                             <li>EN</li>
                         </ul>
                     </button>
-                    <!-- 20221103 수정사항 [e] -->
                 </div>
                 <a href="javascript:vold(0);" class="btn btn-cart"><i class="ic ic-cart"></i><div class="num">2</div></a>
                 <div class="link-choice">
@@ -69,6 +63,35 @@
                         <li><a href="https://www.facebook.com/ENDORPHIN.FACTORY.486" target="_blank"><i class="ic ic-discard Facebook"></i>Facebook</a></li>
                     </ul>
                 </div>
+            <button type="button" class="btn btn-gnb"><i class="ic ic-gnb-open"></i><span class="sr-only">메뉴 열기</span></button>
+            <nav id="gnb">
+              <ul>
+                <li>
+                    <p class="txt" id="gnb-first">ENDORPHIN FACTORY</p>
+                    <ul class="gnb-ef-list">
+                        <li class="ef-list"><a href="../index.html#sectionStory">프로젝트 소개</a></li>
+                        <li class="ef-list"><a href="../index.html#sectionEndorpher">엔도르퍼</a></li>
+                        <li class="ef-list"><a href="../index.html#sectionArtist">DADA</a></li>
+                        <li class="ef-list"><a href="../index.html#sectionPartner">파트너</a></li>
+                        <li class="ef-list"><a href="../index.html#sectionFaq">FAQ</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:vold(0);" class="txt">FACTORY SHOP</a></li>
+                <li><a href="javascript:vold(0);" class="txt">GALLERY</a></li>
+                <li><a href="/subpage/roadmap.html" class="txt">ROADMAP</a></li>
+                <li><a href="/subpage/news.html" class="txt">NEWS</a></li>
+                <li><a hrfe="javascript:vold(0);" class="txt">MINTING GUIDE</a></li>
+                <div class="gnb-etc-wrap">
+                    <a href="javascript:vold(0);" class="btn btn-md btn-mypage"><i class="ic ic-gem gem-xs"></i>MY PAGE</a>
+                    <div class="gnb-lang-choice">
+                        <p class="sr-only">언어 선택</p>
+                        <button type="button" class="btn btn-md bd-none btn-lang">KR
+                        </button>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-gnb-close"><i class="ic ic-gnb-close"></i><span class="sr-only">메뉴 닫기</span></button>
+              </ul>
+            </nav>
             </div>
         </div>
     </header>
@@ -109,10 +132,15 @@
     <!-- //main[e] -->
 
     <!-- footer[s] -->
-    <footer id="footer">
+    <footer id="footer" class="main-footer">
         <div class="inner">
-            <p class="logo"><a href="#"><span class="sr-only">DILLION META</span></a></p>
-            <p class="copyright">COPYRIGHT © DILLION META. ALL RIGHTS RESERVED.</p>
+            <p class="logo">
+                <a href="#" class="logo-link logo-link-mo">
+                    <span class="sr-only">DILLION META</span>
+                </a>
+                <a href="/subpage/service.html" class="txt-link txt-link-mo">이용약관</a>
+            </p>
+            <p class="copyright"><span class="txt-br">COPYRIGHT © DILLION META.<br class="footer-firstbr">ALL RIGHTS RESERVED.</span></p>
             <a href="/subpage/service.html" class="txt-link">이용약관</a>
         </div>
     </footer>
