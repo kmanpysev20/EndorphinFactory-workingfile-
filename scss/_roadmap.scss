@@ -2,6 +2,7 @@
     box-shadow: 0 5px 10px #00000014;
 }
 #sectionRoadmap {
+    background-color: #F4F4F4;
     .contents {
         margin-bottom: rem(50);
         .tit {
@@ -18,9 +19,10 @@
         .roadmap-wrap {
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
             [class*='roadmap-list'] {
                 position: relative;
-                width: rem(648);
+                width: rem(612);
                 height: rem(613);
                 background: #fff;
                 border: rem(4) solid #000000;
@@ -79,6 +81,9 @@
                         width: rem(467);
                         height: rem(400);
                         z-index: 4;
+                    }
+                    .obj-roadmap-mo-complete {
+                        display: none;
                     }
                 }
             }
@@ -139,17 +144,111 @@
         }
         .obj-gem-r2 {
             position: absolute;
-            top: rem(589);
+            top: rem(355);
             margin-left: rem(788);
             width: rem(36);
             height: rem(48);
         }
         .obj-gem-r3 {
             position: absolute;
-            top: rem(554);
-            margin-left: rem(994);
+            top: rem(474);
+            margin-left: rem(897.92);
             width: rem(25);
             height: rem(34);
         }
     }
 }
+
+@media (max-width: 1024px) { 
+    #sectionRoadmap {
+        padding: rem(41) rem(24);
+        .contents {
+            .tit {
+                font-size: rem(28);
+                font-weight: bold;
+                margin-bottom: rem(20);
+            }
+            .dt {
+                font-weight: 400;
+                margin-bottom: rem(40);
+            }
+            .roadmap-wrap {
+                [class*= roadmap-list] {
+                    width: 70%;
+                    height: 70%;
+                    min-height: rem(403);
+                    min-width: rem(342);
+                    padding: rem(30);
+                    margin : rem(10) 0;
+                    .dd {
+                        font-size: rem(14);
+                        font-weight: bold;
+                    }
+                    .tit {
+                        font-size: rem(20);
+                        font-weight: bold;
+                        margin-bottom: rem(20);
+                    }
+                    .txt-wrap {
+                        width: 100%;
+                        min-width: rem(282);
+                        .ic-check {
+                            width: rem(28);
+                            height: rem(28);
+                            margin-right: rem(10);
+                        }
+                        .ic-blank {
+                            width: rem(28);
+                            height: rem(28);
+                            margin-right: rem(10);
+                        }
+                        .txt {
+                            font-size: rem(16);
+                            font-weight: bold;
+                        }
+                    }
+                    .thumb {
+                        height: rem(261);
+                        .obj-roadmap-complete {
+                            display:none;
+                        }
+
+                        .obj-roadmap-mo-complete {
+                            display:inline-block;
+                            width: rem(334);
+                            height: rem(261);
+                        }
+                    }
+                }
+            }
+        }
+        .bg-group-gem {
+            position: absolute;;
+            [class*='obj-gem'] {
+                display:none;
+            }
+            .obj-gem-l1 {
+                display:inline-block;
+                top : rem(14);
+                margin-left: rem(-145);
+                width: rem(31);
+                height: rem(40);
+            }
+            .obj-gem-l2 {
+                display:inline-block;
+                top : rem(164);
+                margin-left: rem(-17);
+                width: rem(40);
+                height: rem(50);
+            }
+            .obj-gem-l3 {
+                display:inline-block;
+                top : rem(46);
+                margin-left: rem(143);
+                width: rem(25);
+                height: rem(33);
+            }
+        }
+    }
+}
+

@@ -2381,6 +2381,7 @@
   #header #gnb li {
     text-align: left;
     margin-bottom: 1.875rem !important;
+    cursor: pointer;
   }
   #header #gnb li .txt {
     font-size: 1.25rem;
@@ -2826,6 +2827,106 @@ a {
   z-index: 2;
 }
 
+@media (max-width: 1024px) {
+  #sectionNews {
+    padding: 2.5rem 1.5rem 6.25rem;
+  }
+  #sectionNews .news-cont {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  #sectionNews .news-cont .tit {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    margin-bottom: 3.125rem;
+  }
+  #sectionNews .news-cont .tit > strong {
+    font-size: 1.75rem;
+    font-weight: bold;
+  }
+  #sectionNews .news-cont .tit .news-br {
+    display: none;
+  }
+  #sectionNews .news-cont .news-wrap {
+    width: 100%;
+    align-items: center;
+  }
+  #sectionNews .news-cont .news-wrap .news-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    margin: 6.25rem 0;
+  }
+  #sectionNews .news-cont .news-wrap .news-list.is-odd {
+    margin: 6.25rem 0rem 6.3125rem 0rem;
+  }
+  #sectionNews .news-cont .news-wrap .news-list.is-even {
+    margin: unset;
+  }
+  #sectionNews .news-cont .news-wrap .news-list::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0.125rem;
+    background: rgba(0, 0, 0, 0.1019607843);
+    z-index: 3;
+    bottom: -3.1875rem;
+  }
+  #sectionNews .news-cont .news-wrap .news-list > small {
+    font-size: 0.875rem;
+    font-weight: 500;
+    width: 100%;
+  }
+  #sectionNews .news-cont .news-wrap .news-list .tit {
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 0rem;
+  }
+  #sectionNews .news-cont .news-wrap .news-list > span {
+    font-size: 1.125rem;
+    font-weight: 400;
+    opacity: 0.5;
+    width: 100%;
+  }
+  #sectionNews .news-cont .news-wrap .news-list .thumb {
+    width: 70%;
+    min-width: 21.375rem;
+    height: 70%;
+    min-height: 13.375rem;
+  }
+  #sectionNews .news-cont .news-wrap .btn-wrap {
+    width: 100%;
+    display: block;
+  }
+  #sectionNews .news-cont .news-wrap .btn-wrap [class*=news-more-btn] {
+    width: 11.1875rem;
+    height: 3.625rem;
+    position: unset;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 0.125rem solid #000;
+  }
+  #sectionNews .news-cont .news-wrap .btn-wrap [class*=news-more-btn].is-odd {
+    margin-top: 6.25rem;
+  }
+  .bg-group [class*=news-obj] {
+    display: none;
+  }
+  .bg-group .news-obj-rocket {
+    width: 4.6875rem;
+    height: 11.75rem;
+    margin-left: 9.25rem;
+    top: 12.75rem;
+    display: inline-block;
+    background-image: url("../img/obj-mo-rocket.png");
+  }
+}
 .modal-container {
   width: 100%;
 }
@@ -4733,6 +4834,9 @@ a {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.0784313725);
 }
 
+#sectionRoadmap {
+  background-color: #F4F4F4;
+}
 #sectionRoadmap .contents {
   margin-bottom: 3.125rem;
 }
@@ -4750,10 +4854,11 @@ a {
 #sectionRoadmap .contents .roadmap-wrap {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 #sectionRoadmap .contents .roadmap-wrap [class*=roadmap-list] {
   position: relative;
-  width: 40.5rem;
+  width: 38.25rem;
   height: 38.3125rem;
   background: #fff;
   border: 0.25rem solid #000000;
@@ -4818,6 +4923,9 @@ a {
   height: 25rem;
   z-index: 4;
 }
+#sectionRoadmap .contents .roadmap-wrap [class*=roadmap-list] .thumb .obj-roadmap-mo-complete {
+  display: none;
+}
 #sectionRoadmap .contents .roadmap-wrap .roadmap-list-1 {
   background-color: #FFFD5D;
 }
@@ -4874,19 +4982,106 @@ a {
 }
 #sectionRoadmap .bg-group-gem .obj-gem-r2 {
   position: absolute;
-  top: 36.8125rem;
+  top: 22.1875rem;
   margin-left: 49.25rem;
   width: 2.25rem;
   height: 3rem;
 }
 #sectionRoadmap .bg-group-gem .obj-gem-r3 {
   position: absolute;
-  top: 34.625rem;
-  margin-left: 62.125rem;
+  top: 29.625rem;
+  margin-left: 56.12rem;
   width: 1.5625rem;
   height: 2.125rem;
 }
 
+@media (max-width: 1024px) {
+  #sectionRoadmap {
+    padding: 2.5625rem 1.5rem;
+  }
+  #sectionRoadmap .contents .tit {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 1.25rem;
+  }
+  #sectionRoadmap .contents .dt {
+    font-weight: 400;
+    margin-bottom: 2.5rem;
+  }
+  #sectionRoadmap .contents .roadmap-wrap [class*=roadmap-list] {
+    width: 70%;
+    height: 70%;
+    min-height: 25.1875rem;
+    min-width: 21.375rem;
+    padding: 1.875rem;
+    margin: 0.625rem 0;
+  }
+  #sectionRoadmap .contents .roadmap-wrap [class*=roadmap-list] .dd {
+    font-size: 0.875rem;
+    font-weight: bold;
+  }
+  #sectionRoadmap .contents .roadmap-wrap [class*=roadmap-list] .tit {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1.25rem;
+  }
+  #sectionRoadmap .contents .roadmap-wrap [class*=roadmap-list] .txt-wrap {
+    width: 100%;
+    min-width: 17.625rem;
+  }
+  #sectionRoadmap .contents .roadmap-wrap [class*=roadmap-list] .txt-wrap .ic-check {
+    width: 1.75rem;
+    height: 1.75rem;
+    margin-right: 0.625rem;
+  }
+  #sectionRoadmap .contents .roadmap-wrap [class*=roadmap-list] .txt-wrap .ic-blank {
+    width: 1.75rem;
+    height: 1.75rem;
+    margin-right: 0.625rem;
+  }
+  #sectionRoadmap .contents .roadmap-wrap [class*=roadmap-list] .txt-wrap .txt {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  #sectionRoadmap .contents .roadmap-wrap [class*=roadmap-list] .thumb {
+    height: 16.3125rem;
+  }
+  #sectionRoadmap .contents .roadmap-wrap [class*=roadmap-list] .thumb .obj-roadmap-complete {
+    display: none;
+  }
+  #sectionRoadmap .contents .roadmap-wrap [class*=roadmap-list] .thumb .obj-roadmap-mo-complete {
+    display: inline-block;
+    width: 20.875rem;
+    height: 16.3125rem;
+  }
+  #sectionRoadmap .bg-group-gem {
+    position: absolute;
+  }
+  #sectionRoadmap .bg-group-gem [class*=obj-gem] {
+    display: none;
+  }
+  #sectionRoadmap .bg-group-gem .obj-gem-l1 {
+    display: inline-block;
+    top: 0.875rem;
+    margin-left: -9.0625rem;
+    width: 1.9375rem;
+    height: 2.5rem;
+  }
+  #sectionRoadmap .bg-group-gem .obj-gem-l2 {
+    display: inline-block;
+    top: 10.25rem;
+    margin-left: -1.0625rem;
+    width: 2.5rem;
+    height: 3.125rem;
+  }
+  #sectionRoadmap .bg-group-gem .obj-gem-l3 {
+    display: inline-block;
+    top: 2.875rem;
+    margin-left: 8.9375rem;
+    width: 1.5625rem;
+    height: 2.0625rem;
+  }
+}
 .mypage-disconnect-inner {
   display: flex;
   justify-content: center;

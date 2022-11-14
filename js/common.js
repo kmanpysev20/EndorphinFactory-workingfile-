@@ -61,7 +61,7 @@ $(document).ready(function(){
     });
 });
 
-//news even & odd event
+//news even & odd check btn
 $(document).ready(function(){
     $('.news-list:odd').toggleClass('is-odd');
     $('.news-list:even').toggleClass('is-even');
