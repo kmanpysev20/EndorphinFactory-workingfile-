@@ -923,6 +923,19 @@ document.querySelectorAll('.faq-q').forEach(faqOpen => {
     }
 })
 
+// Popup Control
+function popupControl() {
+    $(".popup-open").on('click', function () {
+        const popId = $(this).data('popup');
+        $("#"+popId).css('display', 'flex').hide().fadeIn('fast');
+        console.log(popId);
+    });
+    $(".pop-close-btn").on('click', function () {
+        $(this).parents('.pop-wrap').fadeOut();
+    });
+};
+popupControl();
+
 //story popup
 $(function () {
     $(".story-btn").click(function () {
