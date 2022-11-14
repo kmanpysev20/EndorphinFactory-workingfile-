@@ -14,6 +14,7 @@
     <script src="js/jquery-3.6.1.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/common.js"></script>
+    <script src="js/popup.js"></script>
 </head>
 <body>
  
@@ -921,19 +922,6 @@ document.querySelectorAll('.faq-q').forEach(faqOpen => {
         })
     }
 })
-
-// Popup Control
-function popupControl() {
-    $(".popup-open").on('click', function () {
-        const popId = $(this).data('popup');
-        $("#"+popId).css('display', 'flex').hide().fadeIn('fast');
-        console.log(popId);
-    });
-    $(".pop-close-btn").on('click', function () {
-        $(this).parents('.pop-wrap').fadeOut();
-    });
-};
-popupControl();
 
 //story popup
 $(function () {
