@@ -75,7 +75,6 @@ $(document).ready(function(){
         $('.news-more-btn').removeClass('is-odd');
     }
 });
-
 //top button click event
 // function btnTop() {
 //     window.scrollTo({top: 0, left: 0, behavior: 'smooth'})

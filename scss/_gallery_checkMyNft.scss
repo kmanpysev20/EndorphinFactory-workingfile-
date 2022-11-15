@@ -1,34 +1,163 @@
-.connect-wallet-tit {
-    position: relative;
-    font-weight: 400;  
-    margin-top: 180px;
-    margin-bottom: 30px;
+.shadow {
+    box-shadow: 0 5px 10px #00000014;
 }
 
-.connect-btn-wrap {
-    position: relative;
-    border: 4px solid #000000;
-    border-radius: rem(32);
-    background: #fff;
-    width: rem(269);
-    height:rem(66);
-    margin-left: rem(360);
-    cursor: pointer;
-    > a {
-        .connect-btn-content {
-            display:flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: rem(19);
-            > img {
-                width: rem(19);
-                height: rem(25);
-                margin-right: rem(10);
+#sectionGalleryCMN {
+    padding: rem(100) rem(40) rem(160) rem(40);
+    .dt {
+        font-size: rem(24);
+        font-weight: bold;
+        margin-bottom: rem(10);
+    }
+    .tit {
+        font-size: rem(56); 
+        font-weight: bold;
+        margin-bottom: rem(81);
+    }
+    .cont-wrap {
+        display:flex;
+        .cont-left {
+            position: relative;
+            width: rem(224);
+            margin-right: rem(112);
+            .input-wrap {
+                width: rem(224);
+                height: rem(48);
+                border : rem(2) solid #E6E8EB;
+                border-radius: rem(10);
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                > input {
+                    width: rem(174);
+                    font-size: rem(16);
+                    font-weight: 500;
+                    color: #B1B8C0;
+                    margin: rem(13) rem(0) rem(13) rem(0);
+                }
+                .ic-serch {
+                    cursor: pointer;
+                    width: rem(24);
+                    height: rem(24);
+                    background-image: url('../img/ic_input_Search.png');
+                }
             }
-            > p {
-             font-size: rem(20);   
-             font-weight: 600;
+            .filter-cont {
+                margin-top: rem(20);
+                .tit {
+                    position: relative;
+                    display:inline-flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    width: 100%;
+                    font-size: rem(16);
+                    font-weight: bold;
+                    color:#1A1F27;
+                    margin-bottom: rem(11);
+                    ::after {
+                        position: absolute;
+                        content :'';
+                        cursor: pointer;
+                        width: rem(24);
+                        height: rem(24);
+                        right: 0;
+                        bottom: rem(-3);
+                        background-image: url("../img/ic_input_Chevron.png");
+                        background-repeat: no-repeat;   
+                    }
+                    &.is-close {
+                        + .list-wrap {
+                            display:none;
+                        }
+                        ::after {
+                            transform: rotate(180deg);
+                        }
+                    } 
+                    .num {
+                        font-size: rem(16);
+                        font-weight: 500;
+                        color: #2F84FF;
+                        margin-left: auto;
+                        margin-right: rem(30);
+                    }
+                }
+                .list-wrap {
+                    overflow-y: auto;
+                    padding: 0 rem(10);
+                    .list {
+                        display:flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin: rem(22) 0;
+                        > label {
+                            font-weight: 500;
+                            color:#505967;
+                        }
+                        > input {
+                            width: rem(24);
+                            height: rem(24);
+                        }
+                    }
+                }
+                .artist-list-wrap {
+                    height: rem(581);
+                    overflow-y: scroll;
+                }
+            }
+        }
+        .cont-right {
+            width: 100%;
+            .refresh-wrap {
+                display:flex;
+                align-items: center;
+                .ic-refresh {
+                    cursor: pointer;
+                    width: rem(24);
+                    height: rem(24);
+                    background-image: url('../img/ic-refresh.png');
+                    margin-right: rem(5);
+                }
+                .dd {
+                    font-size: rem(14);
+                    font-weight: 500;
+                    &::after {
+                        content: '';
+                        display: inline-block;
+                        width: rem(1);
+                        height: rem(12);
+                        opacity: 0.5;
+                        background: #1A1F27;
+                        margin : rem(0) rem(10);
+                    }
+                }
+                > p {
+                    font-weight: 500;
+                    margin-right: auto;
+                    > strong {
+                        font-weight: bold;
+                        margin-right: rem(5);
+                    }
+                }
+                .ic-check {
+                    width: rem(24);
+                    height: rem(24);
+                    background-image: url('../img/ic-check.png');
+                    margin: rem(0) rem(10);
+                    &.ic-blank {
+                        background-image: url('../img/roadmap-ic-blank.png');
+                    }
+                }
+            }
+            .tit {
+                font-size: rem(20);
+                font-weight: 500;
+                margin-top: rem(200);
+                margin-bottom: rem(30);
+            }
+
+            .btn-wrap {
+                margin-top: rem(50);
             }
         }
     }
-}  
+}

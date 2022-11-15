@@ -442,6 +442,9 @@
         font-size: rem(32);
         font-size: 500;
     }
+    .pfp-txt {
+        margin-top: rem(31);
+    }
     .thumb {
         .tit {
             font-size: rem(24);
@@ -575,7 +578,7 @@
 
     .cont-wrap {
         display:flex;
-        justify-content: center;
+        justify-content: space-between;
         margin-bottom:rem(100);
         flex-wrap: wrap;
         .partner-info {
@@ -598,7 +601,7 @@
                     background: #F4F4F4;
                     border-radius: rem(50);
                     padding: rem(10);
-                    width: rem(97);
+                    width: rem(80);
                     height: rem(80);
                 }
                 > dt {
@@ -643,8 +646,8 @@
                 justify-content: center;
                 > a {
                     position: relative;
-                    width: rem(140);
-                    height: rem(34);
+                    width: 100%;
+                    height: 100%;
                     overflow: hidden;
                     > img {
                         position: absolute;
@@ -653,7 +656,7 @@
                         width: 100%;
                         height: 100%;
                         max-width: 100%;
-                        object-fit: cover;
+                        object-fit: contain;
                     }
                 }
             }
@@ -986,11 +989,17 @@
                 width: rem(735);
                 height:rem(275);
                 background-image: url('../img/Main-pfp-001.png');
+                &.lang-en {
+                    background-image: url('../img/Main_03엔도르퍼_en_slide_01x3.png');
+                }
             }
             .pfp-002 {
                 width: rem(470);
                 height:rem(288);
                 background-image: url('../img/Main-pfp-002.png');
+                &.lang-en {
+                    background-image: url('../img/Main_03엔도르퍼_en_slide_02x3.png');
+                }
             }
             .pfp-003 {
                 width: rem(470);
@@ -999,6 +1008,9 @@
                 background-image: url('../img/Main-pfp-003.png');
                 &:nth-of-type(2) {
                     margin-bottom: rem(20);
+                }
+                &.lang-en {
+                    background-image: url('../img/Main_03엔도르퍼_en_slide_03x3.png');
                 }
             }
             .pfp-004 {
@@ -1010,6 +1022,9 @@
                     font-weight: 500;
                     color: #1A1F27;
                     margin-top : rem(20);
+                }
+                &.lang-en {
+                    background-image: url('../img/Main_03엔도르퍼_en_slide_04x3.png');
                 }
             }
             .tit {
@@ -1034,7 +1049,16 @@
     .pfp-dd {
         display:none;
     }
-
+    .swiper-button-prev {
+        width: 100%;
+        left: -48%;
+        top: 68%;
+    }
+    .swiper-button-next {
+        width: 100%;
+        left: 48%;
+        top: 68%;
+    }
     .swiper-pagination {
         position: absolute;
         left:50%;
@@ -1101,30 +1125,65 @@
             }
         }
     }
+    .swiper-button-prev {
+        width: 100%;
+        left: -56%;
+        top: 51%;
+        .nav-prev-white {
+            width: rem(15);
+            height: rem(30);
+            background-image: url("../img/ic-unique-arrowL.png");
+        }
+    }
+
+    .swiper-button-next {
+        width: 100%;
+        left: 56%;
+        top: 51%;
+        .nav-next-white {
+            width: rem(15);
+            height: rem(30);
+            background-image: url("../img/ic-unique-arrowR.png");
+        }
+    }
     .swiper-pagination {
         position: absolute;
         left:50%;
         transform: translateX(-50%);
         width: 100%;
         margin-top: rem(25);
+        font-size: rem(18);
+        font-weight: bold;
+        color:#fff;
     }
-    .swiper-pagination-bullet {
-        width: rem(8);
-        height: rem(8);
-        border-radius: 50%;
-        opacity: 0.5;
-        background: #FFF;
-        display: inline-block;
-        margin-right: rem(8);
-        cursor: pointer;
-        transition: all 0.2s;
+    .swiper-pagination-current {
+        font-size: rem(18);
+        font-weight: bold;
+        color:#fff;
     }
-    .swiper-pagination-bullet-active {
-        background: #FFF;
-        width: rem(40);
-        border-radius: rem(5);
-        opacity: 1;
+    .swiper-pagination-total {
+        font-size: rem(18);
+        font-weight: bold;
+        color:#fff;
     }
+
+    // .swiper-pagination-bullet {
+    //     width: rem(8);
+    //     height: rem(8);
+    //     border-radius: 50%;
+    //     opacity: 0.5;
+    //     background: #FFF;
+    //     display: inline-block;
+    //     margin-right: rem(8);
+    //     cursor: pointer;
+    //     transition: all 0.2s;
+    // }
+    // .swiper-pagination-bullet-active {
+    //     background: #FFF;
+    //     width: rem(40);
+    //     border-radius: rem(5);
+    //     opacity: 1;
+    // }
 }
 
 // faq
@@ -1472,6 +1531,7 @@
                     height:100%;
                     flex-direction: column-reverse;
                     .pfp-001 {
+                        display:block;
                         background-repeat: no-repeat;
                         background-image: url('../img/Main-mo-pfp-01.png');
                         background-size: 100% 100%;
@@ -1479,6 +1539,7 @@
                         height: rem(462);
                         max-width: rem(272);
                     }
+
                     .pfp-002 {
                         background-repeat: no-repeat;
                         background-image: url('../img/Main-mo-pfp-02.png');
@@ -1517,6 +1578,12 @@
                         display:none;
                     }
                 }
+            }
+            .swiper-button-prev {
+                display: none;
+            }
+            .swiper-button-next {
+                display: none;
             }
         }
         .pfp-dd {
@@ -1557,6 +1624,14 @@
             border : rem(2) solid #000;
             font-size: rem(16);
             font-weight: 600;
+        }
+        .swiper-button-prev {
+            left: -48%;
+            top: 48%;
+        }
+        .swiper-button-next {
+            left: 48%;
+            top: 48%;
         }
     }
 

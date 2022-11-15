@@ -46,6 +46,7 @@
                     opacity: 0.4;
                 }
                 > .tit {
+                    width: 338px;
                     display: block;
                     font-size: rem(24);
                     font-weight: bold;
@@ -212,6 +213,8 @@
                         width: 100%;
                     }
                     .tit {
+                        width: 100%;
+                        min-width: rem(341);
                         font-size: rem(20);
                         font-weight: bold;
                         text-align: left;

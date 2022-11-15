@@ -84,3 +84,22 @@ a {
   background-position: 0 0;
   background-repeat: no-repeat;
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+select {
+  -webkit-appearance:none; /* for chrome */
+  -moz-appearance:none; /*for firefox*/
+  appearance:none;
+}
+
+select::-ms-expand{
+  display:none;/*for IE10,11*/
+}
