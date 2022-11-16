@@ -22,8 +22,8 @@
             flex-wrap: wrap;
             [class*='roadmap-list'] {
                 position: relative;
-                width: rem(612);
-                height: rem(612);
+                width: rem(590);
+                height: rem(590);
                 background: #fff;
                 border: rem(4) solid #000000;
                 border-radius: rem(30);
@@ -33,10 +33,19 @@
                 &.is-check {
                     background-color: #FFFD5D;
                 }
+                &.is-complete > .thumb > .obj-roadmap-complete {
+                    display: inline-block;
+                    object-fit: cover;
+                    width: rem(467);
+                    height: rem(400);
+                    z-index: 4;
+                }
+
                 .list-wrap {
                     width: 100%;
                     height: 100%;
                     overflow-y: auto;
+                    overflow-x: hidden;
                     &::-webkit-scrollbar {
                         border-radius: rem(20);
                         background-color: #fff;
@@ -49,16 +58,17 @@
                     }
                 }
                 .dd {
-                    font-size: rem(18);
+                    font-size: rem(16);
+                    font-weight: bold;
+                    text-align: left;
+                    margin-bottom: rem(30);
+                }
+                .tit {
+                    width: rem(500);
+                    font-size: rem(32);
                     font-weight: bold;
                     text-align: left;
                     margin-bottom: rem(10);
-                }
-                .tit {
-                    font-size: rem(40);
-                    font-weight: bold;
-                    text-align: left;
-                    margin-bottom: rem(31);
                 }
                 .txt-wrap {
                     display:flex;
@@ -81,7 +91,7 @@
                     }
                     .txt {
                         display:inline-block;
-                        font-size: rem(24);
+                        font-size: rem(18);
                         font-weight: bold;
                         text-align: left;
                     }
@@ -94,11 +104,7 @@
                     left:0;
                     overflow: hidden;
                     .obj-roadmap-complete {
-                        display: inline-block;
-                        object-fit: cover;
-                        width: rem(467);
-                        height: rem(400);
-                        z-index: 4;
+                        display: none;
                     }
                     .obj-roadmap-mo-complete {
                         display: none;
@@ -113,7 +119,7 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 50vh;
+        height: 100vh;
         overflow: hidden;
         [class*='obj-gem-'] {
             width: rem(40);
@@ -192,11 +198,27 @@
                     min-width: rem(342);
                     padding: rem(30);
                     margin : rem(10) 0;
+                    &.is-complete > .thumb > .obj-roadmap-complete {
+                        display: none;
+                    }
+                    &.is-complete > .thumb > .obj-roadmap-mo-complete {
+                        display: inline-block;
+                        object-fit: cover;
+                        width: rem(467);
+                        height: rem(400);
+                        z-index: 4;
+                    }
+
+                    .list-wrap {
+                        overflow: unset;
+                    }
+
                     .dd {
                         font-size: rem(14);
                         font-weight: bold;
                     }
                     .tit {
+                        width: 100%;
                         font-size: rem(20);
                         font-weight: bold;
                         margin-bottom: rem(20);
@@ -226,9 +248,7 @@
                         }
 
                         .obj-roadmap-mo-complete {
-                            display:inline-block;
-                            width: rem(334);
-                            height: rem(261);
+                            display:none;
                         }
                     }
                 }

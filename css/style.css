@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .main-cont {
   padding-top: 0;
 }
@@ -941,18 +940,13 @@
 .slide-pfp .pfp-list .thumb .pfp-001 {
   width: 45.9375rem;
   height: 17.1875rem;
+  background-size: 100% 100%;
   background-image: url("../img/Main-pfp-001.png");
-}
-.slide-pfp .pfp-list .thumb .pfp-001.lang-en {
-  background-image: url("../img/Main_03엔도르퍼_en_slide_01x3.png");
 }
 .slide-pfp .pfp-list .thumb .pfp-002 {
   width: 29.375rem;
   height: 18rem;
   background-image: url("../img/Main-pfp-002.png");
-}
-.slide-pfp .pfp-list .thumb .pfp-002.lang-en {
-  background-image: url("../img/Main_03엔도르퍼_en_slide_02x3.png");
 }
 .slide-pfp .pfp-list .thumb .pfp-003 {
   width: 29.375rem;
@@ -962,9 +956,6 @@
 }
 .slide-pfp .pfp-list .thumb .pfp-003:nth-of-type(2) {
   margin-bottom: 1.25rem;
-}
-.slide-pfp .pfp-list .thumb .pfp-003.lang-en {
-  background-image: url("../img/Main_03엔도르퍼_en_slide_03x3.png");
 }
 .slide-pfp .pfp-list .thumb .pfp-004 {
   width: 54.6875rem;
@@ -976,9 +967,6 @@
   font-weight: 500;
   color: #1A1F27;
   margin-top: 1.25rem;
-}
-.slide-pfp .pfp-list .thumb .pfp-004.lang-en {
-  background-image: url("../img/Main_03엔도르퍼_en_slide_04x3.png");
 }
 .slide-pfp .pfp-list .thumb .tit {
   font-size: 1.125rem;
@@ -4046,63 +4034,6 @@ select::-ms-expand {
   margin-top: 3.125rem;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.modal-container {
-  width: 100%;
-}
-.modal-container .popup-wrap {
-  background-color: rgba(0, 0, 0, 0.95);
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: none;
-  z-index: 1000;
-}
-.modal-container .popup-wrap .galleryname-popup {
-  width: 37.5rem;
-  height: 37.5rem;
-  background-color: #ffffff;
-  border-radius: 1.875rem;
-  overflow: hidden;
-  box-shadow: 0.3125rem 0.625rem 0.625rem 0.0625rem rgba(0, 0, 0, 0.3);
-  z-index: 20;
-}
-.modal-container .popup-wrap .galleryname-popup .popup-content {
-  padding: 1.875rem 3.125rem;
-}
-.modal-container .popup-wrap .galleryname-popup .popup-content .popup-head {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.modal-container .popup-wrap .galleryname-popup .popup-content .popup-head .popup-txt1 {
-  font-size: 1.75rem;
-  font-weight: bold;
-  color: #1A1F27;
-}
-.modal-container .popup-wrap .galleryname-popup .popup-content .popup-head .pop-btn .close {
-  width: 2rem;
-  height: 2rem;
-  cursor: pointer;
-}
-.modal-container .popup-wrap .galleryname-popup .popup-content .popup-txt2 {
-  margin-top: 0.5rem;
-  font-size: 1.375rem;
-  font-weight: bold;
-  margin-bottom: 1.875rem;
-  color: #1A1F27;
-}
-
 #fs {
   padding-top: 0%;
 }
@@ -4540,8 +4471,8 @@ select::-ms-expand {
 }
 #sectionRoadmap .contents .roadmap-wrap [class*=roadmap-list] {
   position: relative;
-  width: 38.25rem;
-  height: 38.25rem;
+  width: 36.875rem;
+  height: 36.875rem;
   background: #fff;
   border: 0.25rem solid #000000;
   border-radius: 1.875rem;
@@ -4552,10 +4483,19 @@ select::-ms-expand {
 #sectionRoadmap .contents .roadmap-wrap [class*=roadmap-list].is-check {
   background-color: #FFFD5D;
 }
+#sectionRoadmap .contents .roadmap-wrap [class*=roadmap-list].is-complete > .thumb > .obj-roadmap-complete {
+  display: inline-block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 29.1875rem;
+  height: 25rem;
+  z-index: 4;
+}
 #sectionRoadmap .contents .roadmap-wrap [class*=roadmap-list] .list-wrap {
   width: 100%;
   height: 100%;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 #sectionRoadmap .contents .roadmap-wrap [class*=roadmap-list] .list-wrap::-webkit-scrollbar {
   border-radius: 1.25rem;
@@ -4568,16 +4508,17 @@ select::-ms-expand {
   z-index: 5;
 }
 #sectionRoadmap .contents .roadmap-wrap [class*=roadmap-list] .dd {
-  font-size: 1.125rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 1.875rem;
+}
+#sectionRoadmap .contents .roadmap-wrap [class*=roadmap-list] .tit {
+  width: 31.25rem;
+  font-size: 2rem;
   font-weight: bold;
   text-align: left;
   margin-bottom: 0.625rem;
-}
-#sectionRoadmap .contents .roadmap-wrap [class*=roadmap-list] .tit {
-  font-size: 2.5rem;
-  font-weight: bold;
-  text-align: left;
-  margin-bottom: 1.9375rem;
 }
 #sectionRoadmap .contents .roadmap-wrap [class*=roadmap-list] .txt-wrap {
   display: flex;
@@ -4603,7 +4544,7 @@ select::-ms-expand {
 }
 #sectionRoadmap .contents .roadmap-wrap [class*=roadmap-list] .txt-wrap .txt {
   display: inline-block;
-  font-size: 1.5rem;
+  font-size: 1.125rem;
   font-weight: bold;
   text-align: left;
 }
@@ -4616,12 +4557,7 @@ select::-ms-expand {
   overflow: hidden;
 }
 #sectionRoadmap .contents .roadmap-wrap [class*=roadmap-list] .thumb .obj-roadmap-complete {
-  display: inline-block;
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 29.1875rem;
-  height: 25rem;
-  z-index: 4;
+  display: none;
 }
 #sectionRoadmap .contents .roadmap-wrap [class*=roadmap-list] .thumb .obj-roadmap-mo-complete {
   display: none;
@@ -4632,7 +4568,7 @@ select::-ms-expand {
   top: 0;
   left: 0;
   width: 100%;
-  height: 50vh;
+  height: 100vh;
   overflow: hidden;
 }
 #sectionRoadmap .bg-group-gem [class*=obj-gem-] {
@@ -4710,11 +4646,26 @@ select::-ms-expand {
     padding: 1.875rem;
     margin: 0.625rem 0;
   }
+  #sectionRoadmap .contents .roadmap-wrap [class*=roadmap-list].is-complete > .thumb > .obj-roadmap-complete {
+    display: none;
+  }
+  #sectionRoadmap .contents .roadmap-wrap [class*=roadmap-list].is-complete > .thumb > .obj-roadmap-mo-complete {
+    display: inline-block;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 29.1875rem;
+    height: 25rem;
+    z-index: 4;
+  }
+  #sectionRoadmap .contents .roadmap-wrap [class*=roadmap-list] .list-wrap {
+    overflow: unset;
+  }
   #sectionRoadmap .contents .roadmap-wrap [class*=roadmap-list] .dd {
     font-size: 0.875rem;
     font-weight: bold;
   }
   #sectionRoadmap .contents .roadmap-wrap [class*=roadmap-list] .tit {
+    width: 100%;
     font-size: 1.25rem;
     font-weight: bold;
     margin-bottom: 1.25rem;
@@ -4744,9 +4695,7 @@ select::-ms-expand {
     display: none;
   }
   #sectionRoadmap .contents .roadmap-wrap [class*=roadmap-list] .thumb .obj-roadmap-mo-complete {
-    display: inline-block;
-    width: 20.875rem;
-    height: 16.3125rem;
+    display: none;
   }
   #sectionRoadmap .bg-group-gem {
     position: absolute;

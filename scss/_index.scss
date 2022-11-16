@@ -988,18 +988,13 @@
             .pfp-001 {
                 width: rem(735);
                 height:rem(275);
+                background-size: 100% 100%;
                 background-image: url('../img/Main-pfp-001.png');
-                &.lang-en {
-                    background-image: url('../img/Main_03엔도르퍼_en_slide_01x3.png');
-                }
             }
             .pfp-002 {
                 width: rem(470);
                 height:rem(288);
                 background-image: url('../img/Main-pfp-002.png');
-                &.lang-en {
-                    background-image: url('../img/Main_03엔도르퍼_en_slide_02x3.png');
-                }
             }
             .pfp-003 {
                 width: rem(470);
@@ -1008,9 +1003,6 @@
                 background-image: url('../img/Main-pfp-003.png');
                 &:nth-of-type(2) {
                     margin-bottom: rem(20);
-                }
-                &.lang-en {
-                    background-image: url('../img/Main_03엔도르퍼_en_slide_03x3.png');
                 }
             }
             .pfp-004 {
@@ -1022,9 +1014,6 @@
                     font-weight: 500;
                     color: #1A1F27;
                     margin-top : rem(20);
-                }
-                &.lang-en {
-                    background-image: url('../img/Main_03엔도르퍼_en_slide_04x3.png');
                 }
             }
             .tit {
