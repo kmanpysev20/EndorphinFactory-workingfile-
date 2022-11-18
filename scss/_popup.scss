@@ -726,26 +726,22 @@
         .storypop-cont {
             flex-direction: column;
             align-items: center;
+            [class*="obj-storypop"] {
+                width: unset;
+                height: unset;
+            }
+
             .obj-storypop-1 {
-                width: 100%;
-                min-width: rem(342);
-                height:rem(243);
                 border: rem(4) solid #000;
                 background-size: 100% 100%;
                 margin-right: unset;
             }
             .obj-storypop-2 {
-                width: 100%;
-                min-width: rem(342);
-                height:rem(243);
                 border: rem(4) solid #000;
                 background-size: 100% 100%;
                 margin-right: unset;
             }
             .obj-storypop-3 {
-                width: 100%;
-                min-width: rem(342);
-                height:rem(243);
                 border: rem(4) solid #000;
                 background-size: 100% 100%;
                 margin-right: unset;
@@ -773,7 +769,7 @@
         }
         .swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
             position: relative;
-            bottom: 51%;
+            bottom: -3%;
         }
     }
 

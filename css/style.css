@@ -3711,26 +3711,21 @@ select::-ms-expand {
     flex-direction: column;
     align-items: center;
   }
+  .storypop .storypop-cont [class*=obj-storypop] {
+    width: unset;
+    height: unset;
+  }
   .storypop .storypop-cont .obj-storypop-1 {
-    width: 100%;
-    min-width: 21.375rem;
-    height: 15.1875rem;
     border: 0.25rem solid #000;
     background-size: 100% 100%;
     margin-right: unset;
   }
   .storypop .storypop-cont .obj-storypop-2 {
-    width: 100%;
-    min-width: 21.375rem;
-    height: 15.1875rem;
     border: 0.25rem solid #000;
     background-size: 100% 100%;
     margin-right: unset;
   }
   .storypop .storypop-cont .obj-storypop-3 {
-    width: 100%;
-    min-width: 21.375rem;
-    height: 15.1875rem;
     border: 0.25rem solid #000;
     background-size: 100% 100%;
     margin-right: unset;
@@ -3757,7 +3752,7 @@ select::-ms-expand {
   }
   .storypop .swiper-container-horizontal > .swiper-pagination-bullets, .storypop .swiper-pagination-custom, .storypop .swiper-pagination-fraction {
     position: relative;
-    bottom: 51%;
+    bottom: -3%;
   }
   .uniquepop {
     max-width: unset;
