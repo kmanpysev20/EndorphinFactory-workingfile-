@@ -1,28 +1,26 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
-        <meta name="format-detection" content="telephone=no">
-        <title>Endorphin Factory</title>
-        <link rel="stylesheet" href="../css/swiper.min.css">
-        <link rel="stylesheet" href="../css/jquery-ui.min.css">
-        <link rel="stylesheet" href="../css/jquery-ui.css">
-        <link rel="stylesheet" href="../css/style.css">
-    
-        <script src="../js/jquery-3.6.1.min.js"></script>
-        <script src="../js/jquery-ui.min.js"></script>
-        <script src="../js/common.js"></script>
-    </head>
-<body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endorphin Factory</title>
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/jquery-ui.min.css">
+    <link rel="stylesheet" href="../css/jquery-ui.css">
+    <link rel="stylesheet" href="../css/style.css">
 
+    <script src="../js/jquery-3.6.1.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/common.js"></script>
+</head>
+<body>
  
 <!-- wrap[s] -->
 <div id="wrap">
 
     <!-- header[s] -->
-    <header id="header" class="main-header">
+    <header id="header" class="main-header shadow">
         <div class="inner header-inner">
             <h1 class="logo"><a href="../index.html"><span class="sr-only">ENDORPHIN FACTORY</span></a></h1>
             <ul class="menu-list">
@@ -37,7 +35,7 @@
                     </ul>
                 </li>
                 <li class="menu-ef-btn popup-open" data-popup="info-pop"><a href="#.">Factory Shop</a></li>
-                <li class="menu-ef-btn"><a href="/subpage/gallery.html">Gallery</a></li>
+                <li class="menu-ef-btn popup-open" data-popup="info-pop"><a href="#.">Gallery</a></li>
                 <li class="menu-ef-btn"><a href="/subpage/roadmap.html">Roadmap</a></li>
                 <li class="menu-ef-btn"><a href="/subpage/news.html">News</a></li>
                 <li class="menu-ef-btn popup-open" data-popup="info-pop"><a href="#.">Minting Guide</a></li>
@@ -57,11 +55,11 @@
                 <div class="link-choice">
                     <button type="button" class="btn sns-link-btn"><i class="ic ic-sns-link"></i><span class="sr-only">SNS 선택</span></button>
                     <ul class="link-list">
-                        <li><a href="http://discord.gg/HYNYW7HeNg" target="_blank"><i class="ic ic-discard discord"></i>Discord</a></li>
-                        <li><a href="http://twitter.com/endorphin_pfp" target="_blank"><i class="ic ic-discard twitter"></i>twitter</a></li>
-                        <li><a href="http://instagram.com/endorphin.factory" target="_blank"><i class="ic ic-discard Instagram"></i>Instagram</a></li>
-                        <li><a href="http://www.youtube.com/channel/UCU-O-eVMlYbm5nGggi6g6uQ" target="_blank"><i class="ic ic-discard YouTube"></i>YouTube</a></li>
-                        <li><a href="http://www.facebook.com/ENDORPHIN.FACTORY.486" target="_blank"><i class="ic ic-discard Facebook"></i>Facebook</a></li>
+                        <li><a href="https://discord.gg/HYNYW7HeNg" target="_blank"><i class="ic ic-discard discord"></i>Discord</a></li>
+                        <li><a href="https://twitter.com/endorphin_pfp" target="_blank"><i class="ic ic-discard twitter"></i>twitter</a></li>
+                        <li><a href="https://instagram.com/endorphin.factory" target="_blank"><i class="ic ic-discard Instagram"></i>Instagram</a></li>
+                        <li><a href="https://www.youtube.com/channel/UCU-O-eVMlYbm5nGggi6g6uQ" target="_blank"><i class="ic ic-discard YouTube"></i>YouTube</a></li>
+                        <li><a href="https://www.facebook.com/ENDORPHIN.FACTORY.486" target="_blank"><i class="ic ic-discard Facebook"></i>Facebook</a></li>
                     </ul>
                 </div>
             <button type="button" class="btn btn-gnb"><i class="ic ic-gnb-open"></i><span class="sr-only">메뉴 열기</span></button>
@@ -78,7 +76,7 @@
                     </ul>
                 </li>
                 <li class="popup-open" data-popup="info-pop"><a href="javascript:vold(0);" class="txt">FACTORY SHOP</a></li>
-                <li><a href="/subpage/gallery.html" class="txt">GALLERY</a></li>
+                <li class="popup-open" data-popup="info-pop"><a href="javascript:vold(0);" class="txt">GALLERY</a></li>
                 <li><a href="../subpage/roadmap.html" class="txt">ROADMAP</a></li>
                 <li><a href="../subpage/news.html" class="txt">NEWS</a></li>
                 <li class="popup-open" data-popup="info-pop"><a hrfe="javascript:vold(0);" class="txt">MINTING GUIDE</a></li>
@@ -99,42 +97,56 @@
     <!-- //header[e] -->
 
     <!-- main[s] -->
-    <main id="container" class="bg-white"> <!-- //배경색 적용 클래스: .bg-white, .bg-light, .bg-sky -->
-        
-        <!-- contents[s] -->
-        <section class="main-section" id="sectionNews">
+    <main id="container" class="bg-white pd-none main-cont">
+        <!-- #sectionStory(s)-->
+        <section class="main-section hide" id="sectionminting">
             <div class="inner">
-                <div class="contents news-cont">
-                    <h2 class="tit">Endorphin<br class="news-br">Factory<br><strong>News</strong></h2>
-                    <div class="news-wrap">
-                        <div class="news-list">
-                            <small>ANNOUNCEMENT</small><h3 class="tit">MEDIA ENDORPHIN FACTORY<br>OPEN</h3><span>2022.10.18</span>
-                            <p class="thumb"><img src="../img/Logo_Endorphin.png" alt=""></p>
+                <div class="contents">
+                    <div class="tit-wrap">
+                        <h2 class="tit">Minting Guide</h2>
+                        <h3 class="total-txt">총 판매 수량:<p class="count">10,001</p>개</h3>
+                    </div>
+                    <div class="service-cont">
+                        <h4 class="tit">구매 방법</h4>
+                        <div class="cont-wrap top">
+                            <div class="wrap"><i class="ic ic-map"></i><p class="txt">민팅 사이트로 이동하기</p></div>
+                            <div class="wrap"><i class="ic ic-money"></i><p class="txt">지갑<br>연결하기</p></div>
+                            <div class="wrap"><i class="ic ic-random"></i><p class="txt">구매 수량<br> 입력하기</p></div>
+                            <div class="wrap"><i class="ic ic-hand"></i><p class="txt">민팅하기</p></div>
+                            <div class="wrap"><i class="ic ic-trophy"></i><p class="txt">리필 후 나만의<br>NFT 확인하기</p></div>
                         </div>
-                        <div class="news-list">
-                            <small>ANNOUNCEMENT</small><h3 class="tit">MEDIA ENDORPHIN FACTORY<br>OPEN</h3><span>2022.10.18</span>
-                            <p class="thumb"><img src="../img/Logo_Endorphin.png" alt=""></p>
-                        </div>
-                        <div class="news-list">
-                            <small>ANNOUNCEMENT</small><h3 class="tit">MEDIA ENDORPHIN FACTORY<br>OPEN</h3><span>2022.10.18</span>
-                            <p class="thumb"><img src="../img/Logo_Endorphin.png" alt=""></p>
-                        </div>
-                        <div class="news-list">
-                            <small>ANNOUNCEMENT</small><h3 class="tit">MEDIA ENDORPHIN FACTORY<br>OPEN</h3><span>2022.10.18</span>
-                            <p class="thumb"><img src="../img/Logo_Endorphin.png" alt=""></p>
-                        </div>
-                        <div class="news-list">
-                            <small>ANNOUNCEMENT</small><h3 class="tit">MEDIA ENDORPHIN FACTORY<br>OPEN</h3><span>2022.10.18</span>
-                            <p class="thumb"><img src="../img/Logo_Endorphin.png" alt=""></p>
-                        </div>
-                        <div class="btn-wrap">
-                            <a href="javascript:vold(0);" class="btn btn-xlg news-more-btn"><i class="ic ic-gem gem-sm"></i>VIEW MORE</a>
+                        <span class="refer">※ 민팅 시 구매하는 NFT는 추후 리빌되어 1만개의 엔도르퍼 이미지로 변경됩니다.</span>
+                        <div class="btn-wrap"><a href="#." class="btn btn-xlg bg-primary ready mt-begi-btn">민팅 초보자 가이드</a></div>
+                        
+                        <h4 class="tit">세일 정보</h4> 
+                        <span class="refer">※ 자세한 세일 정보 추후 공지</span>
+                        <div class="btn-wrap"><a href="#." class="btn btn-xlg bg-primary ready mt-minting-btn">엔돌핀 팩토리 민팅하기 (GO ROUNDROBIN)</a></div>
+
+                        <h4 class="tit tit-bot">Holder Benefit</h4>
+                        <div class="cont-wrap wrap-bot">
+                            <div class="wrap"><i class="ic ic-paint"></i><p class="txt">예술작품을<br> NFT로 소유</p></div>
+                            <div class="wrap"><i class="ic ic-gold"></i><p class="txt">자유로운<br>PFP NFT의 활용</p></div>
+                            <div class="wrap"><i class="ic ic-calender"></i><p class="txt">작가의 친필 사인이 담긴<br>작품과 보증서</p><span>※유니크 엔도르퍼<br>최초 구매자에게만 제공됩니다.</span></div>
+                            <div class="wrap"><i class="ic ic-brush"></i><p class="txt">실물 캔버스와<br>굿즈 제작 지원</p></div>
+                            <div class="wrap"><i class="ic ic-100"></i><p class="txt">NFT 대량 구매 시<br>실물 캔버스 작품 제공</p></div>
+                            <div class="wrap"><i class="ic ic-smile"></i><p class="txt">엔도르핀 팩토리<br>IP 콜라보 비즈니스</p></div>
+                            <div class="wrap"><i class="ic ic-diamond"></i><p class="txt">인쇄 작품 판매<br>수익 쉐어</p></div>
+                            <div class="wrap"><i class="ic ic-buy"></i><p class="txt">다양한 구매<br>할인 혜택</p><span>※굿즈 브랜드 콜라보 제품,<br>작가 작품 등</span></div>
+                            <div class="wrap"><i class="ic ic-notice"></i><p class="txt">다양한 전시 및<br>행사 초대</p></div>
+                            <p class="txt">더 자세한 내용이 궁금하다면 <strong>엔돌핀 팩토리 디스코드 입장하기</strong>를 클릭해주세요!</p>
+                            <div class="btn-wrap"><a href="#." class="btn btn-xlg bg-primary ready mt-discord-btn">엔돌핀 팩토리 디스코드 입장하기</a></div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="bg-group">
+                <i class="bg-item sv-obj-flower"></i>
+                <i class="bg-item sv-obj-grass"></i>
+                <i class="bg-item sv-obj-mo-bg"></i>
+            </div>
         </section>
-        <!-- //contents[e] -->
+        <!-- //#sectionStory(e)-->
+
     </main>
     <!-- //main[e] -->
 
@@ -152,18 +164,6 @@
         </div>
     </footer>
     <!-- //footer[e] -->
-    
-    <!-- bg fixed [s] -->
-    <div class="bg-group">
-        <i class="bg-item news-obj-tree-l1"></i>
-        <i class="bg-item news-obj-tree-l2"></i>
-        <i class="bg-item news-obj-flower"></i>
-        <i class="bg-item news-obj-en1"></i>
-        <i class="bg-item news-obj-en2"></i>
-        <i class="bg-item news-obj-rocket"></i>
-        <i class="bg-item news-obj-sungem"></i>
-    </div>
-    <!-- bg fixed [e] -->
 
 </div>
 <!-- wrap[e] -->

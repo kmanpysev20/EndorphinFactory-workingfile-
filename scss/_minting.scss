@@ -1,0 +1,307 @@
+.shadow {
+    box-shadow: 0px 5px 10px #00000014;
+}
+
+#sectionminting {
+    background: #F4F4F4 0% 0% no-repeat padding-box;
+    padding: rem(200) rem(40);
+    &.is-active {
+        .bg-group-gem {
+            position: fixed;
+        }
+    }
+    .contents {
+        display:flex;
+        align-items: center;
+        .tit-wrap {
+            width: 100%;
+            display:flex;
+            align-items: center;
+            margin-bottom: rem(51);
+            max-width: rem(1072);
+            .tit {
+                display:inline-block;
+                font-size: rem(56);
+                color: #1A1F27;
+                text-align: left;
+                margin-right: auto;
+            }
+            .total-txt {
+                display:inline-flex;
+                justify-content: center;
+                align-items: center;
+                font-size: rem(28);
+                font-weight: bold;
+                color: #1A1F27;
+                .count {
+                    display:inline-block;
+                    font-size: rem(50);
+                    font-weight: bold;
+                    margin-left: rem(12);
+                }
+            }
+        }
+        .service-cont {
+            width: 100%;
+            max-width: rem(1072);
+            min-height: rem(1689);
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            border: rem(4) solid #000000;
+            border-radius: rem(30);
+            text-align: left;
+            padding: rem(50) rem(100) rem(102) rem(100);
+            .tit {
+                position: relative;
+                font-size: rem(28);
+                font-weight: bold;
+                text-align: left;
+                margin-bottom: rem(82);
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: rem(1);
+                    background: #D2D6DA;
+                    left:0;
+                    bottom:rem(-21);
+                }
+            }
+            .cont-wrap {
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: rem(140);
+                .wrap {
+                    margin-right: rem(93);
+                    &:nth-of-type(5) {
+                        margin-right: unset;
+                    }
+                    [class*='ic-'] {
+                        display:inline-block;
+                        position: relative;
+                        background-repeat: no-repeat;
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            width: rem(28);
+                            height: rem(28);
+                            top:rem(46);
+                            left: rem(130);
+                            background-image: url('../img/MT-ic-arrowR.png');
+                            background-repeat: no-repeat;
+                        }
+                    }
+                    .ic-map {
+                        width: rem(88);
+                        height: rem(80);
+                        background-image: url('../img/MT-ic-map.png');
+                    }
+                    .ic-money {
+                        width: rem(80);
+                        height: rem(91);
+                        background-image: url('../img/MT-ic-money.png');
+                        &::after {
+                            top : rem(53);
+                        }
+                    }
+                    .ic-random {
+                        width: rem(86);
+                        height: rem(80);
+                        background-image: url('../img/MT-ic-random.png');
+                        &::after {
+                            top : rem(50);
+                        }
+                    }
+                    .ic-hand {
+                        width: rem(80);
+                        height: rem(80);
+                        background-image: url('../img/MT-ic-hand.png');
+                        &::after {
+                            top : rem(39);
+                        }
+                    }
+                    .ic-trophy {
+                        width: rem(80);
+                        height: rem(80);
+                        background-image: url('../img/MT-ic-trophy.png');
+                        &::after {
+                            display:none;
+                        }
+                    }
+                    .txt {
+                        width: rem(92);
+                        font-size: rem(16);
+                        font-weight: 600;
+                        color:#1A1F27;
+                        line-height: rem(20);
+                        text-align: center;
+                    }
+                }
+            }
+            .refer {
+                display: block;
+                width: 100%;
+                font-size: rem(16);
+                font-weight: 400;
+                text-align: center;
+                margin-top: rem(50);
+                margin-bottom: rem(20);
+            }
+            .btn-wrap {
+                display:flex;
+                justify-content: center;
+                .mt-begi-btn {
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: rem(240);
+                    border: rem(3) solid #000;
+                    border-radius: rem(12);
+                    font-size: rem(20);
+                    font-weight: 400;
+                    height: rem(60);
+                }
+            }
+            .mt-minting-btn {
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                width: rem(556);
+                height: rem(72);
+                color: #000;
+                border : rem(4) solid #000;
+                border-radius: rem(12);
+                background: #FDE500;
+                font-size: rem(24);
+                font-weight: bold;
+                color:#1A1F27;
+                margin-top : rem(30);
+                margin-bottom: rem(140);
+            }
+            .tit-bot {
+                margin-bottom: rem(70);
+            }
+            .wrap-bot {
+                width: 100%;
+                height: rem(405);
+                flex-wrap: wrap;
+                .wrap {
+                    display:flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: rem(156);
+                    height: rem(182);
+                    margin-right: rem(14);
+                    [class*='ic-'] {
+                        &::after {
+                            content: '';
+                            display:none;
+                        }
+                    }
+                    .txt {
+                        margin : rem(10) 0;
+                        width: rem(150);
+                    }
+                    > span {
+                        width: rem(156);
+                        text-align: center;
+                        font-size: rem(13);
+                        font-weight: 400;
+                        color:#1A1F27;
+                    }
+                    .ic-paint {
+                        width: rem(80);
+                        height: rem(80);
+                        background-image: url('../img/MT-ic-paint.png');
+                    }
+                    .ic-gold {
+                        width: rem(80);
+                        height: rem(80);
+                        background-image: url('../img/MT-ic-gold.png');
+                    }
+                    .ic-calender {
+                        width: rem(80);
+                        height: rem(80);
+                        background-image: url('../img/MT-ic-calender.png');
+
+                    }
+                    .ic-brush {
+                        width: rem(80);
+                        height: rem(80);
+                        background-image: url('../img/MT-ic-brush.png');
+                    }
+                    .ic-100 {
+                        width: rem(95);
+                        height: rem(80);
+                        background-image: url('../img/MT-ic-100.png');
+                    }
+                    .ic-smile {
+                        width: rem(80);
+                        height: rem(80);
+                        background-image: url('../img/MT-ic-smile.png');
+                    }
+                    .ic-diamond {
+                        width: rem(80);
+                        height: rem(80);
+                        background-image: url('../img/MT-ic-diamond.png');
+                    }
+                    .ic-buy {
+                        width: rem(80);
+                        height: rem(80);
+                        background-image: url('../img/MT-ic-buy.png');
+                    }
+                    .ic-notice {
+                        width: rem(80);
+                        height: rem(80);
+                        background-image: url('../img/MT-ic-notice.png');
+                    }
+                }
+                .txt {
+                    width: 100%;
+                    display: block;
+                    font-size: rem(16);
+                    font-weight: 400;
+                    margin-top: rem(50);
+                    margin-bottom: rem(20);
+                    text-align: center;
+                    > strong {
+                        font-size: rem(17);
+                        font-weight: bold;
+                    }
+                }
+                .mt-discord-btn {
+                    width: rem(320);
+                    height: rem(60);
+                    border : rem(3) solid #000;
+                    border-radius: rem(12);
+                }
+            }
+        }
+    }
+
+    .bg-group {
+        background-color: #F4F4F4;
+        bottom:0;
+        top:unset;
+        height:100vh;
+        .sv-obj-flower {
+            bottom: 0;
+            width: 100%;
+            min-width: rem(1920);
+            height: rem(270);
+            background-image: url("../img/obj-flower.png");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        .sv-obj-grass {
+            bottom: rem(-33);
+            width: 100%;
+            min-width: rem(1920);
+            height: rem(270);
+            background-image: url("../img/obj-grass.png");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+    }
+}
