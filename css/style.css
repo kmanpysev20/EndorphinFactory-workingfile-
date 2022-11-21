@@ -296,7 +296,7 @@
   background-image: url("../img/obj-flower.png");
 }
 #sectionStory .bg-group .obj-grass {
-  bottom: -2.0625rem;
+  bottom: -4.0625rem;
   width: 100%;
   min-width: 120rem;
   height: 16.875rem;
@@ -738,7 +738,6 @@
   background: #FFFD5D;
   border: 0.25rem solid #000;
   border-radius: 0.625rem;
-  box-shadow: 0 1.25rem 1.25rem rgba(0, 0, 0, 0.16);
   margin: 1.25rem;
 }
 .card-item .thumb {
@@ -3642,15 +3641,11 @@ select::-ms-expand {
   color: #1A1F27;
 }
 .galgoodspop .pop-cont .pop-center .cont-wrap .dtdd-wrap:nth-of-type(4) {
-  margin-bottom: 3.875rem;
+  margin-bottom: 2rem;
 }
-.galgoodspop .pop-cont .pop-center .cont-wrap .dtdd-wrap:nth-of-type(4):after {
-  content: "";
-  position: absolute;
-  width: 31.25rem;
-  height: 0.0625rem;
-  background: #E6E8EB;
-  top: 47%;
+.galgoodspop .pop-cont .pop-center .cont-wrap > hr {
+  color: #E6E8EB;
+  margin-bottom: 1.25rem;
 }
 .galgoodspop .pop-cont .pop-center .cont-wrap .txt {
   display: block;
@@ -3658,6 +3653,8 @@ select::-ms-expand {
   font-weight: 400;
   color: #1A1F27;
   line-height: 1.6875rem;
+  overflow-y: auto;
+  height: 3.375rem;
 }
 .galgoodspop .pop-cont > small {
   font-weight: bold;
@@ -3666,19 +3663,29 @@ select::-ms-expand {
   margin-bottom: 1.25rem;
 }
 .galgoodspop .pop-cont .proper-wrap {
+  display: flex;
+  flex-wrap: wrap;
   width: 56rem;
   text-align: left;
-}
-.galgoodspop .pop-cont .proper-wrap .proper-list {
   margin: 0rem auto;
 }
-.galgoodspop .pop-cont .proper-wrap .proper-list .item-tit {
+.galgoodspop .pop-cont .proper-wrap .item-tit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 8.75rem;
   height: 5.3125rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
   background: #FFFFFF;
   border: 0.125rem solid #1B1F26;
   border-radius: 0.625rem;
   margin: 0rem 0.625rem 0.625rem 0;
+}
+.galgoodspop .pop-cont .proper-wrap .item-tit .item-txt {
+  font-size: 1.25rem;
+  font-weight: bold;
 }
 
 @media (max-width: 1024px) {
@@ -3711,21 +3718,26 @@ select::-ms-expand {
     flex-direction: column;
     align-items: center;
   }
-  .storypop .storypop-cont [class*=obj-storypop] {
-    width: unset;
-    height: unset;
-  }
   .storypop .storypop-cont .obj-storypop-1 {
+    width: 100%;
+    min-width: 21.375rem;
+    height: 15.1875rem;
     border: 0.25rem solid #000;
     background-size: 100% 100%;
     margin-right: unset;
   }
   .storypop .storypop-cont .obj-storypop-2 {
+    width: 100%;
+    min-width: 21.375rem;
+    height: 15.1875rem;
     border: 0.25rem solid #000;
     background-size: 100% 100%;
     margin-right: unset;
   }
   .storypop .storypop-cont .obj-storypop-3 {
+    width: 100%;
+    min-width: 21.375rem;
+    height: 15.1875rem;
     border: 0.25rem solid #000;
     background-size: 100% 100%;
     margin-right: unset;
@@ -3752,7 +3764,7 @@ select::-ms-expand {
   }
   .storypop .swiper-container-horizontal > .swiper-pagination-bullets, .storypop .swiper-pagination-custom, .storypop .swiper-pagination-fraction {
     position: relative;
-    bottom: -3%;
+    bottom: 51%;
   }
   .uniquepop {
     max-width: unset;
@@ -3985,6 +3997,142 @@ select::-ms-expand {
     width: 1.1875rem;
     height: 1.5625rem;
   }
+  .galnamepop {
+    max-width: unset;
+    border-radius: unset;
+    height: 100%;
+    max-width: unset;
+  }
+  .galnamepop .pop-cont {
+    overflow-y: auto;
+  }
+  .galnamepop .pop-cont .pop-head {
+    margin-bottom: 2.375rem;
+  }
+  .galnamepop .pop-cont .pop-head .pop-txt {
+    font-size: 1.25rem;
+  }
+  .galnamepop .pop-cont .pop-head .pop-close-btn {
+    width: 2rem;
+    height: 2rem;
+  }
+  .galnamepop .pop-cont .txt {
+    font-size: 1rem;
+  }
+  .galnamepop .pop-cont .thumb {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    margin: 1.875rem auto;
+    height: unset;
+  }
+  .galnamepop .pop-cont .thumb > img {
+    position: absolute;
+    border: 0.3125rem solid #000;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    max-width: 100%;
+  }
+  .galnamepop .pop-cont .input-wrap {
+    width: 100%;
+    margin: 0rem auto 2.5rem;
+  }
+  .galnamepop .pop-cont .input-wrap > input {
+    font-size: 1.375rem;
+  }
+  .galnamepop .pop-cont .btn-wrap .galname-more-btn {
+    height: 3.625rem;
+    border: 0.125rem solid #000;
+    font-size: 1rem;
+  }
+  .galgoodspop {
+    max-width: unset;
+    border-radius: unset;
+    height: 100%;
+    max-width: unset;
+  }
+  .galgoodspop .pop-cont {
+    overflow-y: auto;
+  }
+  .galgoodspop .pop-cont .pop-head {
+    margin-bottom: 2.375rem;
+  }
+  .galgoodspop .pop-cont .pop-head .pop-txt {
+    font-size: 1.25rem;
+  }
+  .galgoodspop .pop-cont .pop-head .pop-close-btn {
+    width: 2rem;
+    height: 2rem;
+  }
+  .galgoodspop .pop-cont .pop-center {
+    flex-direction: column;
+  }
+  .galgoodspop .pop-cont .pop-center .thumb {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+  }
+  .galgoodspop .pop-cont .pop-center .thumb > img {
+    position: absolute;
+    border: 0.3125rem solid #000;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    max-width: 100%;
+  }
+  .galgoodspop .pop-cont .pop-center .cont-wrap {
+    width: 100%;
+    height: unset;
+    margin-top: 3.125rem;
+  }
+  .galgoodspop .pop-cont .pop-center .cont-wrap .tit {
+    font-size: 1.25rem;
+  }
+  .galgoodspop .pop-cont .pop-center .cont-wrap .dtdd-wrap {
+    display: flex;
+    align-items: center;
+  }
+  .galgoodspop .pop-cont .pop-center .cont-wrap .dtdd-wrap .dt {
+    font-size: 0.875rem;
+    font-weight: bold;
+  }
+  .galgoodspop .pop-cont .pop-center .cont-wrap .dtdd-wrap .dd {
+    font-weight: 500;
+  }
+  .galgoodspop .pop-cont .pop-center .cont-wrap .dtdd-wrap:nth-of-type(4) {
+    margin-bottom: 2rem;
+  }
+  .galgoodspop .pop-cont .pop-center .cont-wrap .txt {
+    width: 100%;
+    overflow-y: unset;
+    height: unset;
+  }
+  .galgoodspop .pop-cont .proper-wrap {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, -webkit-max-content));
+    grid-template-columns: repeat(auto-fit, minmax(140px, max-content));
+    grid-gap: 0.625rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .galgoodspop .pop-cont .proper-wrap .item-tit {
+    width: 100%;
+    height: 3.75rem;
+    font-size: 0.8125rem;
+    font-weight: 400;
+    height: unset;
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+  .galgoodspop .pop-cont .proper-wrap .item-tit .item-txt {
+    margin-top: 0.375rem;
+    font-size: 1rem;
+  }
 }
 .shadow {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.0784313725);
@@ -4164,19 +4312,20 @@ select::-ms-expand {
   display: inline-flex;
   justify-content: space-around;
   align-items: center;
-  width: 8.5rem;
   height: 3rem;
   font-weight: 500;
   color: #1A1F27;
+  padding: 0rem 1.25rem;
   border: 0.0625rem solid #E6E8EB;
   border-radius: 1.5rem;
   background: #FFFFFF;
-  margin-right: 0.625rem;
+  margin: 0.25rem;
 }
 #sectionGallery .cont-wrap .cont-right .check-wrap .btn-txt .close-btn {
   cursor: pointer;
   width: 1.5rem;
   height: 1.5rem;
+  margin-left: 0.9375rem;
   background-image: url("../img/ic-popup-close-black.png");
 }
 #sectionGallery .cont-wrap .cont-right .check-wrap .count {
@@ -4208,18 +4357,38 @@ select::-ms-expand {
   margin: 0.75rem;
   background: #fff;
   border-radius: 1.875rem;
-  height: 30.5625rem;
+  height: 100%;
 }
 #sectionGallery .cont-wrap .cont-right .product-wrap .product-list .thumb {
+  position: relative;
   cursor: pointer;
   width: 100%;
   max-width: 18.875rem;
   height: 18.875rem;
   overflow: hidden;
+  border-radius: 1.875rem 1.875rem 0 0;
+}
+#sectionGallery .cont-wrap .cont-right .product-wrap .product-list .thumb:after {
+  display: none;
+}
+#sectionGallery .cont-wrap .cont-right .product-wrap .product-list .thumb.is-unique:after {
+  display: block;
+  position: absolute;
+  content: "Unique";
+  font-size: 0.875rem;
+  font-weight: bold;
+  border-radius: 1.25rem;
+  border: 0.125rem solid #000;
+  color: #000;
+  background-color: #fff;
+  left: 1.0625rem;
+  top: 1.125rem;
+  padding: 0.5rem 0.625rem;
 }
 #sectionGallery .cont-wrap .cont-right .product-wrap .product-list .thumb > img {
   width: 100%;
   height: 100%;
+  border-radius: 1.875rem 1.875rem 0 0;
 }
 #sectionGallery .cont-wrap .cont-right .product-wrap .product-list .txt {
   margin: 1.875rem 1.875rem 0 1.875rem;
@@ -4229,7 +4398,7 @@ select::-ms-expand {
 #sectionGallery .cont-wrap .cont-right .product-wrap .product-list .tit {
   font-size: 1.5rem;
   font-weight: bold;
-  margin: 0.3125rem 1.875rem 0 1.875rem;
+  margin: 0.3125rem 1.875rem 0.625rem 1.875rem;
 }
 #sectionGallery .cont-wrap .cont-right .product-wrap .product-list .btn-wrap {
   width: 100%;
@@ -4253,8 +4422,34 @@ select::-ms-expand {
   font-weight: bold;
   color: #1A1F27;
 }
-#sectionGallery .cont-wrap .cont-right .btn-wrap {
+#sectionGallery .cont-wrap .cont-right .page {
   margin-top: 3.125rem;
+  text-align: center;
+}
+#sectionGallery .cont-wrap .cont-right .page > a {
+  display: inline-flex;
+  width: 2rem;
+  height: 2rem;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: #1A1F27;
+  opacity: 0.6;
+  border-radius: 0.3125rem;
+}
+#sectionGallery .cont-wrap .cont-right .page > a.is-open {
+  color: #fff;
+  background: #2F84FF;
+}
+#sectionGallery .cont-wrap .cont-right .page > a.bt {
+  font-size: 1rem;
+  padding: 1.25rem;
+}
+#sectionGallery .cont-wrap .cont-right .page > a.bt:hover {
+  background: gray;
+}
+#sectionGallery .cont-wrap .cont-right .page > a.num {
+  margin: 0rem 0.625rem;
 }
 
 @media (max-width: 1024px) {
@@ -4344,7 +4539,6 @@ select::-ms-expand {
     margin-bottom: 1.875rem;
   }
   #sectionGallery .cont-wrap .cont-right .check-wrap .btn-txt {
-    width: 8.5rem;
     height: 3rem;
     font-size: 1rem;
     font-weight: 500;
@@ -4359,16 +4553,37 @@ select::-ms-expand {
   #sectionGallery .cont-wrap .cont-right .product-wrap .product-list {
     width: 100%;
     max-width: 10.125rem;
-    height: 21.25rem;
+    height: 100%;
     margin: 0.25rem;
+    border-radius: 1rem;
   }
   #sectionGallery .cont-wrap .cont-right .product-wrap .product-list .thumb {
+    position: relative;
     width: 100%;
     height: 10.125rem;
+    border-radius: 1rem 1rem 0 0;
+  }
+  #sectionGallery .cont-wrap .cont-right .product-wrap .product-list .thumb:after {
+    display: none;
+  }
+  #sectionGallery .cont-wrap .cont-right .product-wrap .product-list .thumb.is-unique:after {
+    display: block;
+    position: absolute;
+    content: "Unique";
+    font-size: 0.5rem;
+    font-weight: 500;
+    border-radius: 1rem;
+    border: 0.125rem solid #000;
+    color: #000;
+    background-color: #fff;
+    left: 0.6875rem;
+    top: 0.5625rem;
+    padding: 0.1875rem 0.1875rem;
   }
   #sectionGallery .cont-wrap .cont-right .product-wrap .product-list .thumb > img {
     width: 100%;
     height: 100%;
+    border-radius: 1rem 1rem 0 0;
   }
   #sectionGallery .cont-wrap .cont-right .product-wrap .product-list .txt {
     font-size: 0.875rem;
@@ -4391,6 +4606,21 @@ select::-ms-expand {
   #sectionGallery .cont-wrap .cont-right .product-wrap .product-list .btn-wrap .btn-gal {
     border: 0.0625rem solid #000;
     margin: 0.3125rem 0;
+  }
+  #sectionGallery .cont-wrap .cont-right .page {
+    margin-top: 1.875rem;
+  }
+  #sectionGallery .cont-wrap .cont-right .page > a {
+    width: 1.875rem;
+    height: 1.875rem;
+    opacity: 0.6;
+  }
+  #sectionGallery .cont-wrap .cont-right .page > a.bt {
+    font-size: 1rem;
+    padding: 1.25rem;
+  }
+  #sectionGallery .cont-wrap .cont-right .page > a.num {
+    margin: 0rem 0.375rem;
   }
   #sectionGallery .gal-more-btn {
     display: none;
@@ -6794,7 +7024,7 @@ select::-ms-expand {
 #sectionminting .contents .service-cont {
   width: 100%;
   max-width: 67rem;
-  min-height: 105.5625rem;
+  height: 100%;
   background: #FFFFFF 0% 0% no-repeat padding-box;
   border: 0.25rem solid #000000;
   border-radius: 1.875rem;
@@ -6821,8 +7051,8 @@ select::-ms-expand {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   width: 100%;
-  height: 8.75rem;
 }
 #sectionminting .contents .service-cont .cont-wrap .wrap {
   margin-right: 5.8125rem;
@@ -6935,7 +7165,6 @@ select::-ms-expand {
 }
 #sectionminting .contents .service-cont .wrap-bot {
   width: 100%;
-  height: 25.3125rem;
   flex-wrap: wrap;
 }
 #sectionminting .contents .service-cont .wrap-bot .wrap {
@@ -7027,6 +7256,7 @@ select::-ms-expand {
 }
 #sectionminting .bg-group {
   background-color: #F4F4F4;
+  width: 100%;
   bottom: 0;
   top: unset;
   height: 100vh;
