@@ -493,6 +493,9 @@
                         &.bt {
                             font-size: rem(16);
                             padding:rem(20);
+                            &:hover {
+                            background: gray;
+                        }
                         }
                         &.num {
                             margin: rem(0) rem(6);

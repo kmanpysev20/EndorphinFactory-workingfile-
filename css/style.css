@@ -4619,6 +4619,9 @@ select::-ms-expand {
     font-size: 1rem;
     padding: 1.25rem;
   }
+  #sectionGallery .cont-wrap .cont-right .page > a.bt:hover {
+    background: gray;
+  }
   #sectionGallery .cont-wrap .cont-right .page > a.num {
     margin: 0rem 0.375rem;
   }
