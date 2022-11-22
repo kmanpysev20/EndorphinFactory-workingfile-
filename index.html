@@ -35,11 +35,11 @@
                         <li><a href="#sectionFaq">FAQ</a></li>
                     </ul>
                 </li>
-                <li class="menu-ef-btn popup-open" data-popup="info-pop"><a href="#.">Factory Shop</a></li>
+                <li class="menu-ef-btn"><a href="./subpage/factoryshop.html">Factory Shop</a></li>
                 <li class="menu-ef-btn" ><a href="./subpage/gallery.html">Gallery</a></li>
                 <li class="menu-ef-btn"><a href="./subpage/roadmap.html">Roadmap</a></li>
                 <li class="menu-ef-btn"><a href="./subpage/news.html">News</a></li>
-                <li class="menu-ef-btn popup-open" data-popup="info-pop"><a href="#.">Minting Guide</a></li>
+                <li class="menu-ef-btn"><a href="./subpage/minting.html">Minting Guide</a></li>
             </ul>
             <div class="menu-etc">
                 <a href="javascript:vold(0);" class="btn btn-md btn-mypage"><i class="ic ic-gem gem-xs"></i>MY PAGE</a>
@@ -76,11 +76,11 @@
                         <li class="ef-list"><a href="#sectionFaq">FAQ</a></li>
                     </ul>
                 </li>
-                <li class="popup-open" data-popup="info-pop"><a href="javascript:vold(0);" class="txt">FACTORY SHOP</a></li>
+                <li><a href="./subpage/factoryshop.html" class="txt">FACTORY SHOP</a></li>
                 <li><a href="./subpage/gallery.html" class="txt">GALLERY</a></li>
                 <li><a href="./subpage/roadmap.html" class="txt">ROADMAP</a></li>
                 <li><a href="./subpage/news.html" class="txt">NEWS</a></li>
-                <li class="popup-open" data-popup="info-pop"><a hrfe="javascript:vold(0);" class="txt">MINTING GUIDE</a></li>
+                <li><a href="./subpage/minting.html" class="txt">MINTING GUIDE</a></li>
                 <div class="gnb-etc-wrap">
                     <a href="javascript:vold(0);" class="btn btn-md btn-mypage"><i class="ic ic-gem gem-xs"></i>MY PAGE</a>
                     <div class="gnb-lang-choice">
@@ -942,6 +942,7 @@ $(window).on('resize', function () {
 const uniqueSwiper = new Swiper('.slide-unique', {
     slidesPerView: 1,
     slidesPerColumn: 2,
+    slidesPerGroup: 1,
     pagination: {
         el: '.swiper-pagination',
         // 20221115 수정사항 [s]
@@ -955,22 +956,27 @@ const uniqueSwiper = new Swiper('.slide-unique', {
     breakpoints: {
         464: {
             slidesPerView: 2,
+            slidesPerGroup: 2,
             slidesPerColumn: 2,
         },
         696: {
             slidesPerView: 3,
+            slidesPerGroup: 3,
             slidesPerColumn: 2,
         },
         928: {
             slidesPerView: 4,
+            slidesPerGroup: 4,
             slidesPerColumn: 2,
         },
         1160: {
             slidesPerView: 5,
+            slidesPerGroup: 5,
             slidesPerColumn: 2,
         },
         1392: {
             slidesPerView: 6,
+            slidesPerGroup: 6,
             slidesPerColumn: 2,
         },
     },

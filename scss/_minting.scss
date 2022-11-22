@@ -274,6 +274,9 @@
                     height: rem(60);
                     border : rem(3) solid #000;
                     border-radius: rem(12);
+                    >br {
+                        display:none;
+                    }
                 }
             }
         }
@@ -302,6 +305,143 @@
             background-image: url("../img/obj-grass.png");
             background-repeat: no-repeat;
             background-size: 100% 100%;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    #sectionminting {
+        padding: rem(151) rem(24);
+        .contents {
+            .tit-wrap {
+                flex-direction: column;
+                .tit {
+                    width: 100%;
+                    font-size: rem(28);
+                    text-align: center;
+                    margin-bottom: rem(27);
+                }
+                .total-txt {
+                    font-size: rem(24);
+                    font-weight: 500;
+                    .count {
+                        font-size: rem(26);
+                        font-weight: bold;
+                    }
+                }
+            }
+            .service-cont {
+                padding: rem(30);
+                .tit {
+                    font-size: rem(18);
+                    margin-bottom: rem(60);
+                }
+                .cont-wrap {
+                    flex-direction: column;
+                    .wrap {
+                        width: 100%;
+                        display:flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-right: unset;
+                        margin-bottom: rem(20);
+                        &:nth-of-type(5) {
+                            margin-bottom: rem(0);
+                        }
+
+                        [class*='ic-'] {
+                            background-size: contain;
+                            &::after {
+                                display:none;
+                            }
+                        }
+                        .txt {
+                            width: rem(190);
+                            font-size: rem(16);
+                            margin-left: rem(20);
+                            text-align: left;
+                            >br {
+                                display:none;
+                            }
+                        }
+                    }
+                }
+                .refer {
+                    margin: rem(30) 0;
+                    font-size: rem(14);
+                    font-weight: 400;
+                    text-align: left;
+                    &:nth-of-type(2) {
+                        text-align: center;
+                        margin: rem(30) 0;
+                    }
+                }
+                .btn-wrap {
+                    margin-bottom: rem(90);
+                    .mt-begi-btn {
+                        width: 100%;
+                        height: rem(64);
+                        border-radius: rem(12);
+                        border: rem(3) solid #000;
+                        font-size: rem(20);
+                        font-weight: bold;
+                    }
+                    .mt-minting-btn {
+                        width: 100%;
+                        height: rem(88);
+                        margin-top: rem(0);
+                        margin-bottom: rem(0);
+                        white-space: normal;
+                        text-align: center;
+                        font-size: rem(20);
+                        line-height: rem(24);
+                    }
+                }
+
+                .tit-bot {
+                    margin-bottom: rem(60);
+                }
+                .wrap-bot {
+                    margin-bottom: unset;
+                    .wrap {
+                        height: 100%;
+                        flex-direction: unset;
+                        margin-bottom: rem(20);
+                        &:nth-of-type(5) {
+                            margin-bottom: rem(20);
+                        }
+                        .txt {
+                            font-size: rem(16);
+                            > span {
+                                font-size: rem(13);
+                                font-weight: 400;
+                                display:block;
+                            }
+                        }
+                    }
+                    .txt {
+                        margin-top: rem(10);   
+                        font-size: rem(14);
+                        >strong {
+                            font-size: rem(14);
+                        }
+                    }
+                    .btn-wrap {
+                        width: 100%;
+                        margin-top: rem(10);
+                        .mt-discord-btn {
+                            white-space: normal;
+                            display:inline-flex;
+                            justify-content: center;
+                            width: 100%;
+                            height: rem(88);
+                            text-align: center;
+                            font-size: rem(20);
+                            line-height: rem(24);
+                        }
+                    }
+                }
+            }
         }
     }
 }
