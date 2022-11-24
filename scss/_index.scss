@@ -615,8 +615,19 @@
                     font-size: rem(18);
                     font-weight: 500;
                 }
-            }
         }
+    }
+    .btn-wrap {
+        .collabo-btn {
+            display:inline-flex;
+            justify-content: center;
+            width: 100%;
+            font-size: rem(20);
+            font-weight: bold;
+            border-radius: rem(12);
+            background: #FFFD5D;
+        }
+    }
 }
 
 #sectionPartnerSub {
